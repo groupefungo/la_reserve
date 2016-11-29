@@ -1,0 +1,89 @@
+header{
+  background: #FFF;
+  position: relative;
+  z-index: 15;
+  height: 119px;
+
+  .fb-link{
+    position: absolute;
+    right: 30px;
+    top: 23px;
+    z-index: 1;
+
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  .navbar{
+    min-height: initial;
+    margin-bottom: 0px;
+
+    .navbar-header{
+      .navbar-brand{
+        padding: 0;
+        line-height: 0;
+        height: initial;
+      }
+
+      .navbar-toggle{
+        margin-top: 42px;
+        margin-right: 0px;
+      }
+    }
+
+    .navbar-collapse{
+      .navbar-nav{
+        top: 64px;
+        position: relative;
+
+        li{
+          font-family: $TradeGothicBold;
+          font-size: 1.125em;
+
+          a{
+            color: #363636;
+
+            span.underline{
+              width: 0%;
+              height: 2px;
+              background: #ed202a;
+              position: relative;
+              display: block;
+              top: 4px;
+              -webkit-transition: width .25s ease-in-out;
+              -moz-transition: width .25s ease-in-out;
+              -o-transition: width .25s ease-in-out;
+              transition: width .25s ease-in-out;
+            }
+
+            &:hover{
+              color: #ed202a;
+
+              span.underline{
+                width: 100%;
+              }
+            }
+          }
+
+          &.add-margin-right{
+            margin-right: 25px;
+          }
+
+          &.active-link{
+            a{
+              span.underline{
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .navbar-default{
+    background-color: #FFF;
+    border: none;
+  }
+}

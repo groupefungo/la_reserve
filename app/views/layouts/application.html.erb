@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>La Réserve - <%= yield(:page_title) %></title>
+  <% #favicon_link_tag 'favicon.ico' %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+  <!--OpenGraph Meta-->
+  <!--<meta property="og:title" content="CRT Construction" />-->
+  <!--<meta property="og:site_name" content="CRT Construction" />-->
+  <!--<meta property="og:type" content="website" />-->
+  <!--<meta property="og:url" content="http://www.crtconstruction.ca" />-->
+  <!--<meta property="og:image" content="<%= image_path('crt_facebook.png') %>" />-->
+  <!--<meta property="og:image:width" content="1200" />-->
+  <!--<meta property="og:image:height" content="630" />-->
+  <!--<meta property="og:description" content="<%= t('navigation.meta_desc') %>" />-->
+
+  <!--GOOGLE ANALYTICS-->
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <a href="#" class="fb-link"><%= image_tag 'facebook-icon', alt: 'Facebook' %></a>
+        <nav class="navbar navbar-default">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/"><%= image_tag 'petro-canada-logo-stclaire', alt: 'Petro-Canada' %></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="add-margin-right <%= params[:id] == 'a-propos' ? 'active-link' : '' %>"><a href="/a-propos/">À propos <span class="underline"></span></a></li>
+                <li class="add-margin-right"><a href="#">Nos Produits <span class="underline"></span></a></li>
+                <li class="add-margin-right <%= params[:id] == 'la-reserve' ? 'active-link' : '' %>"><a href="/la-reserve/">La Réserve <span class="underline"></span></a></li>
+                <li class="<%= params[:id] == 'contact' ? 'active-link' : '' %>"><a href="/contact/">Contactez-nous <span class="underline"></span></a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<%= yield %>
+
+<footer>
+  <div class="footer-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+          <div class="footer-title">
+            <h2>Liens<br/>rapides</h2>
+          </div>
+          <div class="footer-links">
+            <ul class="mobile-footer-links">
+              <li><a href="/a-propos/">À propos</a></li>
+              <li><a href="#">Nos produits</a></li>
+            </ul>
+            <ul>
+              <li><a href="/la-reserve/">La Réserve</a></li>
+              <li><a href="/contact/">Contactez-nous</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="social-media-wrapper pull-right">
+            <div class="footer-title">
+              <h2>Suivez-<br/>nous</h2>
+            </div>
+            <div class="footer-links ">
+              <ul>
+                <li><a href="#"><%= image_tag 'facebook-footer-icon', alt: 'Facebook' %></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="footer-copyright-container">
+            <div class="footer-copyright-wrapper">
+              <p class="pull-left">Copyright © 2016</p>
+              <ul class="pull-right">
+                <li><a href="">Confidentialité</a></li>
+                <li><span>|</span></li>
+                <li><a href="">Légal</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="copyright-text">
+            <p>Tous droits réservés. L’utilisation de ce site signifie que vous consentez aux modalités d’utilisation de la présente entente.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<%= content_for :page_title, 'Accueil' %>
+
+<section id="slippry-slider" class="full-width">
+  <div class="sy-box front-page">
+    <div class="sy-slides-wrap">
+      <div class="sy-slides-crop">
+        <ul id="slippry-demo" class="sy-list">
+          <li class="sy-slide fade useCSS sy-active" style="transition-duration: 800ms; opacity: 1;">
+            <%= image_tag 'slide1', alt: '' %>
+            <div class="inner-container">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="header-title">
+                      <div class="text-container hidden-xs">
+                        <%= image_tag 'reserve-logo', alt: '' %>
+                        <h1>découvrez <span>ici</span> notre<br/>grande variété de bières<br/>de microbrasserie</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="sy-slide fade useCSS" style="transition-duration: 800ms; opacity: 0;">
+            <img src="http://placehold.it/1920x682">
+          </li>
+          <li class="sy-slide fade useCSS" style="transition-duration: 800ms; opacity: 0;">
+            <%= image_tag 'slide3', alt: '' %>
+          </li>
+        </ul>
+      </div>
+      <div class="sy-filler ready"></div>
+    </div>
+  </div>
+</section>
+
+<div class="home-content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="mobile-home-content hidden-lg hidden-md hidden-sm">
+          <%= image_tag 'reserve-logo', alt: '' %>
+          <h1>découvrez <span>ici</span> notre<br/>grande variété de bières<br/>de microbrasserie</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-promo-container">
+    <div class="container-fluid">
+      <section id="one-fouth">
+        <div class="text-container">
+          <div class="text-wrapper">
+            <h2>Muffin et café</h2>
+            <h3>5<sup>25$</sup></h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <div class="image-container hidden-xs">
+          <%= image_tag 'home-muffin', alt: 'promo1' %>
+        </div>
+      </section>
+      <section id="one-fouth">
+        <div class="image-container img-bg-2 hidden-xs">
+          <%= image_tag 'home-icecream', alt: 'promo2' %>
+        </div>
+        <div class="text-container">
+          <div class="text-wrapper">
+            <h2>Crème glacée Hâagen-dazs</h2>
+            <h3>12<sup>99$</sup></h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="promo-title">Disponible <span>ici</span></h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="home-promo-slider">
+      <div class="home-slide">
+        <div class="inner-slide">
+          <div class="slide-wrapper">
+            <%= image_tag 'beer-promo', alt: 'promo2' %>
+          </div>
+        </div>
+        <div class="caption-container">
+          <h4>Biéres de microbrasserie</h4>
+        </div>
+      </div>
+      <div class="home-slide">
+        <div class="inner-slide">
+          <div class="slide-wrapper">
+            <%= image_tag 'car-promo', alt: 'promo2' %>
+          </div>
+        </div>
+        <div class="caption-container">
+          <h4>Services de mécanique</h4>
+        </div>
+      </div>
+      <div class="home-slide">
+        <div class="inner-slide">
+          <div class="slide-wrapper">
+            <%= image_tag 'petrop-promo', alt: 'promo2' %>
+          </div>
+        </div>
+        <div class="caption-container">
+          <h4>Pétro Point</h4>
+        </div>
+      </div>
+      <div class="home-slide">
+        <div class="inner-slide">
+          <div class="slide-wrapper">
+            <%= image_tag 'slush-promo', alt: 'promo2' %>
+          </div>
+        </div>
+        <div class="caption-container">
+          <h4>Slush</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(function(){
+    $('.home-promo-slider').slick({
+      dots: false,
+      arrows: true,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: false,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+  });
+</script>

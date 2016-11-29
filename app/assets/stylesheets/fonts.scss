@@ -1,0 +1,37 @@
+@import url("//hello.myfonts.net/count/3170dd");
+
+$NexaRustSlab-BlackShadow02: 'NexaRustSlab-BlackShadow02',sans-serif;
+$NexaRustSansBlack: 'nexa_rust_sansblack',sans-serif;
+$NexaRustSansBook: 'nexa_rust_sansbook',sans-serif;
+$TradeGothicBold: 'trade_gothic_lt_std_boldRg',sans-serif;
+
+@font-face {font-family: 'NexaRustSlab-BlackShadow02';src: image-url('webfonts/3170DD_0_0.eot');src: image-url('webfonts/3170DD_0_0.eot?#iefix') format('embedded-opentype'),image-url('webfonts/3170DD_0_0.woff2') format('woff2'),image-url('webfonts/3170DD_0_0.woff') format('woff'),image-url('webfonts/3170DD_0_0.ttf') format('truetype');}
+
+@font-face {
+  font-family: 'trade_gothic_lt_std_boldRg';
+  src: image-url('webfonts/tradegothicltstd-bold-webfont.eot');
+  src: image-url('webfonts/tradegothicltstd-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  image-url('webfonts/tradegothicltstd-bold-webfont.woff') format('woff'),
+  image-url('webfonts/tradegothicltstd-bold-webfont.ttf') format('truetype'),
+  image-url('webfonts/tradegothicltstd-bold-webfont.svg#trade_gothic_lt_std_boldRg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'nexa_rust_sansblack';
+  src: image-url('webfonts/fontfabric_-_nexa_rust_sans_black-webfont.woff2') format('woff2'),
+  image-url('webfonts/fontfabric_-_nexa_rust_sans_black-webfont.woff') format('woff'),
+  image-url('webfonts/Fontfabric_Nexa_Rust_Sans_Black.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'nexa_rust_sansbook';
+  src: image-url('webfonts/fontfabric_-_nexa_rust_sans_book-webfont.woff2') format('woff2'),
+  image-url('webfonts/fontfabric_-_nexa_rust_sans_book-webfont.woff') format('woff'),
+  image-url('webfonts/Fontfabric_Nexa_Rust_Sans_Book.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
