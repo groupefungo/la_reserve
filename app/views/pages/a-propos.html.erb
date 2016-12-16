@@ -1,7 +1,8 @@
 <%= content_for :page_title, 'À propos' %>
 
-<section id="page_header">
-  <%= image_tag 'about-header', alt: 'À propos' %>
+<section id="page_header" class="header-about">
+  <%= image_tag 'about-header', alt: 'À propos', class: 'mobile-landscape-header header-img' %>
+  <%= image_tag 'mobile-about-header', alt: 'À propos', class: 'mobile-potrait-header header-img' %>
 
   <div class="inner-container">
     <div class="container">
@@ -9,12 +10,9 @@
         <div class="col-lg-12">
           <div class="header-title">
             <div class="text-container">
-              <h1>avec vous et pour vous, depuis 1958</h1>
-              <p class="hidden-xs">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar sapien sodales turpis aliquam
-                dapibus. Mauris a erat sit amet massa porta scelerisque ac at velit. Praesent dignissim quam a varius
-                sagittis. Pellentesque tristique dictum ligula vel finibus. Praesent dignissim quam a varius sagittis.
-                Pellentesque tristique dictum ligula vel finibus.
+              <h1><%=	t('about.header_title') %></h1>
+              <p>
+                <%=	t('about.header_subtext') %>
               </p>
             </div>
           </div>
@@ -26,125 +24,112 @@
 
 <div class="main-content">
   <div class="about-container">
-    <div class="container-fluid">
-      <section class="hidden-lg hidden-md hidden-sm mobile-sub-text">
-        <p class="">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar sapien sodales turpis aliquam
-          dapibus. Mauris a erat sit amet massa porta scelerisque ac at velit. Praesent dignissim quam a varius
-          sagittis. Pellentesque tristique dictum ligula vel finibus. Praesent dignissim quam a varius sagittis.
-          Pellentesque tristique dictum ligula vel finibus.
-        </p>
-      </section>
-
-      <section id="one-fouth">
-        <div class="image-container hidden-sm hidden-xs">
-          <%= image_tag 'about-company', alt: 'À propos' %>
-        </div>
-        <div class="text-container">
+    <div class="container-fluid fluid-container-limit">
+      <!--SECTION COMPANY------------------------------------------------------------------------------------------------------>
+      <div class="custom-section company-section">
+        <div class="text-container text-to-right">
           <div class="text-wrapper">
-            <h2>Entreprise</h2>
+            <h2><%=	t('about.company.title') %></h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar sapien sodales turpis aliquam
-              dapibus. Mauris a erat sit amet massa porta scelerisque ac at velit. Praesent dignissim quam a varius
-              sagittis. Pellentesque tristique dictum ligula vel finibus. Praesent dignissim quam a varius sagittis.
-              Pellentesque tristique dictum ligula vel finibus.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar sapien sodales turpis aliquam
-              dapibus. Mauris a erat sit amet massa porta scelerisque ac at velit. Praesent dignissim quam a varius
-              sagittis. Pellentesque tristique dictum ligula vel finibus. Praesent dignissim quam a varius sagittis.
-              Pellentesque tristique dictum ligula vel finibus.
+              <%=	t('about.company.subtext').html_safe %>
             </p>
           </div>
         </div>
-      </section>
-    </div>
-  </div>
-</div>
-
-<section id="half" class="middle-section">
-  <div class="container add-padding">
-    <div class="row">
-      <div class="col-md-6 col-lg-6">
-        <div class="text-container">
-          <h2>Pétro Point</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar sapien sodales turpis aliquam
-            dapibus. Mauris a erat sit amet massa porta scelerisque ac at velit. Praesent dignissim quam a varius
-            sagittis. Pellentesque tristique dictum ligula vel finibus. Praesent dignissim quam a varius sagittis.
-            Pellentesque tristique dictum ligula vel finibus.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar sapien sodales turpis aliquam
-            dapibus. Mauris a erat sit amet massa porta scelerisque ac at velit. Praesent dignissim quam a varius
-            sagittis. Pellentesque tristique dictum ligula vel finibus. Praesent dignissim quam a varius sagittis.
-            Pellentesque tristique dictum ligula vel finibus.
-          </p>
-        </div>
       </div>
-      <div class="col-md-6 col-lg-6">
-        <div class="image-container hidden-sm hidden-xs right-image">
-          <%= image_tag 'about-petropoints', alt: 'À propos', class: 'petropoint' %>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="main-content">
-  <div class="about-container">
-    <div class="container-fluid">
-      <section id="one-fouth">
-        <div class="text-container">
+      <!--SECTION PETROPOINTS------------------------------------------------------------------------------------------------------>
+      <div class="custom-section card-section">
+        <div class="text-container text-to-left">
           <div class="text-wrapper">
-            <h2>Services</h2>
+            <h2><%=	t('about.petro_points.title') %></h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar sapien sodales turpis aliquam
-              dapibus. Mauris a erat sit amet massa porta scelerisque ac at velit. Praesent dignissim quam a varius
-              sagittis. Pellentesque tristique dictum ligula vel finibus. Praesent dignissim quam a varius sagittis.
-              Pellentesque tristique dictum ligula vel finibus.
+              <%=	t('about.petro_points.subtext_1').html_safe %>
             </p>
+            <ol>
+              <li><%=	t('about.petro_points.o_list_item_1').html_safe %></li>
+              <li><%=	t('about.petro_points.o_list_item_2').html_safe %></li>
+              <li><%=	t('about.petro_points.o_list_item_3').html_safe %></li>
+            </ol>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar sapien sodales turpis aliquam
-              dapibus. Mauris a erat sit amet massa porta scelerisque ac at velit. Praesent dignissim quam a varius
-              sagittis. Pellentesque tristique dictum ligula vel finibus. Praesent dignissim quam a varius sagittis.
-              Pellentesque tristique dictum ligula vel finibus.
+              <%=	t('about.petro_points.subtext_2').html_safe %>
             </p>
           </div>
         </div>
-        <div class="image-container hidden-sm hidden-xs">
-          <%= image_tag 'about-service', alt: 'À propos' %>
+        <div class="petro-point-card-container">
+          <%= image_tag 'about-petro-card-section', alt: 'Petro Point', class: 'petro-point-card' %>
+          <p>&nbsp;</p>
+          <a href="https://retail.petro-canada.ca/fr/profile/register.aspx?m=join" target="_blank" class="btn-cards"><%=	t('about.petro_points.btn_subscribe') %></a>
+          <a href="http://retail.petro-canada.ca/fr/petropoints/petro-points.aspx?__utma=22615482.125358831.1474486032.1478797086.1481815850.6&__utmb=22615482.4.10.1481815850&__utmc=22615482&__utmx=-&__utmz=22615482.1481815850.6.6.utmcsr=google%7Cutmccn=(organic)%7Cutmcmd=organic%7Cutmctr=(not%20provided)&__utmv=-&__utmk=10217270" target="_blank" class="btn-cards btn-details"><%=	t('about.petro_points.btn_details') %></a>
         </div>
-      </section>
+      </div>
+      <!--SECTION SERVICES------------------------------------------------------------------------------------------------------>
+      <div class="custom-section services-section">
+        <div class="text-container text-to-right">
+          <div class="text-wrapper">
+            <h2><%=	t('about.services.title') %></h2>
+            <p>
+              <%=	t('about.services.subtext').html_safe %>
+            </p>
+            <ul>
+              <li><%=	t('about.services.u_list_item_1').html_safe %></li>
+              <li><%=	t('about.services.u_list_item_2').html_safe %></li>
+              <li><%=	t('about.services.u_list_item_3').html_safe %></li>
+              <li><%=	t('about.services.u_list_item_4').html_safe %></li>
+              <li><%=	t('about.services.u_list_item_5').html_safe %></li>
+              <li><%=	t('about.services.u_list_item_6').html_safe %></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--SECTION Mechanic------------------------------------------------------------------------------------------------------>
+      <div class="custom-section mechanic-section">
+        <div class="text-container text-to-left">
+          <div class="text-wrapper">
+            <h2><%=	t('about.mechanic.title') %></h2>
+
+            <h3><%=	t('about.mechanic.subtitle_1') %></h3>
+            <p>
+              <%=	t('about.mechanic.subtext_1').html_safe %>
+            </p>
+
+            <h3><%=	t('about.mechanic.subtitle_2') %></h3>
+
+            <div class="row">
+              <div class="col-lg-4 col-md-4">
+                <ul>
+                  <li><%=	t('about.mechanic.u_list_1.item_1') %></li>
+                  <li><%=	t('about.mechanic.u_list_1.item_2') %></li>
+                  <li><%=	t('about.mechanic.u_list_1.item_3') %></li>
+                  <li><%=	t('about.mechanic.u_list_1.item_4') %></li>
+                  <li><%=	t('about.mechanic.u_list_1.item_5') %></li>
+                  <li><%=	t('about.mechanic.u_list_1.item_6') %></li>
+                  <li><%=	t('about.mechanic.u_list_1.item_7') %></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <ul>
+                  <li><%=	t('about.mechanic.u_list_2.item_1') %></li>
+                  <li><%=	t('about.mechanic.u_list_2.item_2') %></li>
+                  <li><%=	t('about.mechanic.u_list_2.item_3') %></li>
+                  <li><%=	t('about.mechanic.u_list_2.item_4') %></li>
+                  <li><%=	t('about.mechanic.u_list_2.item_5') %></li>
+                  <li><%=	t('about.mechanic.u_list_2.item_6') %></li>
+                  <li><%=	t('about.mechanic.u_list_3.item_7') %></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <ul>
+                  <li><%=	t('about.mechanic.u_list_3.item_1') %></li>
+                  <li><%=	t('about.mechanic.u_list_3.item_2') %></li>
+                  <li><%=	t('about.mechanic.u_list_3.item_3') %></li>
+                  <li><%=	t('about.mechanic.u_list_3.item_4') %></li>
+                  <li><%=	t('about.mechanic.u_list_3.item_5') %></li>
+                  <li><%=	t('about.mechanic.u_list_3.item_6') %></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
-<section id="half" class="middle-section">
-  <div class="container add-padding">
-    <div class="row">
-      <div class="col-md-6 col-lg-6">
-        <div class="image-container hidden-sm hidden-xs left-image">
-          <img src="http://placehold.it/571x625">
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-6">
-        <div class="text-container">
-          <h2>Équipe</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar sapien sodales turpis aliquam
-            dapibus. Mauris a erat sit amet massa porta scelerisque ac at velit. Praesent dignissim quam a varius
-            sagittis. Pellentesque tristique dictum ligula vel finibus. Praesent dignissim quam a varius sagittis.
-            Pellentesque tristique dictum ligula vel finibus.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar sapien sodales turpis aliquam
-            dapibus. Mauris a erat sit amet massa porta scelerisque ac at velit. Praesent dignissim quam a varius
-            sagittis. Pellentesque tristique dictum ligula vel finibus. Praesent dignissim quam a varius sagittis.
-            Pellentesque tristique dictum ligula vel finibus.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>

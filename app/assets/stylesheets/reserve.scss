@@ -5,15 +5,15 @@
         .col-lg-12 {
           .header-title {
             .text-container {
-              img{
-                width: initial !important;
+              .reserve-logo{
+                width: 50%;
               }
 
               h1{
                 color: #b7b6b5 !important;
                 text-align: center;
                 font-family: $NexaRustSansBook !important;
-                font-size: 1.5em !important;
+                font-size: 1.75em;
                 margin-bottom: 0px !important;
                 margin-top: 45px !important;
               }
@@ -26,55 +26,129 @@
 }
 
 .reserve-container{
-  .micro-item{
-    margin-bottom: 30px;
-    position: relative;
+  background: #ed202a;
 
-    img{
-      max-width: 100%;
-      width: 100%;
+  .full-width-container{
+    padding: 0;
+    margin: 0;
+
+    .remove-padding{
+      padding-right: 0px;
+      padding-left: 0px;
     }
 
-    .text-container{
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top:0;
-      left:0;
-      background: #FFF;
-      text-align: center;
-      opacity: 0;
-      -webkit-transition: opacity .25s ease-in-out;
-      -moz-transition: opacity .25s ease-in-out;
-      -o-transition: opacity .25s ease-in-out;
-      transition: opacity .25s ease-in-out;
+    .micro-item{
+      background: #ed202a;
+      min-height: 450px;
+      position: relative;
 
-      .inner-container{
-        display: table;
+      .content-wrapper{
         width: 100%;
         height: 100%;
-        margin: 0 auto;
+        position: absolute;
+        top:0;
+        left:0;
+        text-align: center;
+        -webkit-transition: background-color .25s ease-in-out;
+        -moz-transition: background-color .25s ease-in-out;
+        -o-transition: background-color .25s ease-in-out;
+        transition: background-color .25s ease-in-out;
 
         .inner-wrapper{
-          display: table-cell;
+          display: table;
           width: 100%;
           height: 100%;
-          padding: 0 15px;
-          vertical-align: middle;
-          position: relative;
+          margin: 0 auto;
 
-          p{
-            font-size: 1.25em;
-            color: #5e5e5e;
+          .wrapper{
+            display: table-cell;
+            width: 100%;
+            height: 100%;
+            padding: 0 15px;
+            vertical-align: middle;
+            position: relative;
+
+            img{
+              max-width: 100%;
+              position: relative;
+            }
+
+            .text-container{
+              position: absolute;
+              left: 0;
+              padding: 25px;
+              top: 65%;
+              transform: translateY(-50%);
+              -moz-opacity: 0;
+              -khtml-opacity: 0;
+              opacity: 0;
+              display: none;
+
+              h3{
+                text-transform: uppercase;
+              }
+
+              p{
+                font-size: 1.05em;
+                color: #5e5e5e;
+              }
+            }
           }
         }
       }
     }
-
-    &:hover{
-      .text-container{
-        opacity:1;
-      }
-    }
   }
+
+
+  //.micro-item{
+  //  margin-bottom: 30px;
+  //  position: relative;
+  //
+  //  img{
+  //    max-width: 100%;
+  //    width: 100%;
+  //  }
+  //
+  //  .text-container{
+  //    width: 100%;
+  //    height: 100%;
+  //    position: absolute;
+  //    top:0;
+  //    left:0;
+  //    background: #FFF;
+  //    text-align: center;
+  //    opacity: 0;
+  //    -webkit-transition: opacity .25s ease-in-out;
+  //    -moz-transition: opacity .25s ease-in-out;
+  //    -o-transition: opacity .25s ease-in-out;
+  //    transition: opacity .25s ease-in-out;
+  //
+  //    .inner-container{
+  //      display: table;
+  //      width: 100%;
+  //      height: 100%;
+  //      margin: 0 auto;
+  //
+  //      .inner-wrapper{
+  //        display: table-cell;
+  //        width: 100%;
+  //        height: 100%;
+  //        padding: 0 15px;
+  //        vertical-align: middle;
+  //        position: relative;
+  //
+  //        p{
+  //          font-size: 1.25em;
+  //          color: #5e5e5e;
+  //        }
+  //      }
+  //    }
+  //  }
+  //
+  //  &:hover{
+  //    .text-container{
+  //      opacity:1;
+  //    }
+  //  }
+  //}
 }

@@ -1,21 +1,38 @@
+#page_header{
+  .mobile-potrait-header{
+    display: none;
+  }
+}
+
+.header-about{
+  .header-title{
+    .text-container{
+      h1{
+        font-size: 3.750em;
+      }
+
+      p{
+        font-size: 1.875em;
+      }
+    }
+  }
+}
+
 .about-container{
-  #one-fouth{
-    section{
-      display:table;
-      width:100%;
-    }
-    .text-container,.image-container{
-      display:table-cell;
-      vertical-align:middle;
-    }
+  .container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .custom-section{
+    float:left;
+    background-repeat:no-repeat;
+    background-size:auto 100%;
+    width:100%;
 
     .text-container{
-      background: #e6d3b7;
-
-      .text-wrapper{
-        width: 80%;
-        margin: 0 auto;
-      }
+      width:72%;
+      position: relative;
 
       h2{
         font-size: 2em;
@@ -24,7 +41,7 @@
         font-weight: 700;
         border-bottom: 1px solid;
         padding-bottom: 8px;
-        margin-bottom: 25px;
+        margin-bottom: 45px;
         margin-top: 0px;
       }
 
@@ -32,62 +49,136 @@
         font-size: 1.375em;
         color: #5e5e5e;
       }
-    }
-  }
 
-  .mobile-sub-text{
-    p{
-      font-size: 1.375em;
-      color: #5e5e5e;
-      margin-bottom: 50px;
-    }
-  }
-}
+      ol,ul{
+        padding-left: 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
 
-.add-padding{
-  padding-left: 70px;
-  padding-right: 70px;
-}
+        li{
+          color: #5e5e5e;
+          font-size: 1.15em;
+          margin-bottom: 10px;
+        }
+      }
 
-#half{
-  .text-container{
-    h2{
-      font-size: 2em;
-      color: #363636;
-      text-transform: uppercase;
-      font-weight: 700;
-      border-bottom: 1px solid;
-      padding-bottom: 8px;
-      margin-bottom: 25px;
-      margin-top: 0px;
+      ul{
+        list-style-type: none;
+        padding-left: 0;
+
+        li{
+          font-style: italic;
+        }
+      }
+
+      .text-wrapper{
+        padding: 100px 175px 100px 100px;
+      }
     }
 
-    p{
-      font-size: 1.375em;
-      color: #5e5e5e;
-    }
-  }
-
-  .image-container{
-    img{
-      max-width: 100%;
+    &.company-section{
+      background-image:image-url('about-company-section.jpg');
+      background-position: left;
     }
 
-    .petropoint{
-      margin-top: 65px;
+    &.card-section{
+      background: #fcfaf7;
+      position: relative;
+
+      .petro-point-card-container{
+        position: absolute;
+        width: 28%;
+        text-align: center;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        padding: 40px;
+
+        .petro-point-card{
+          width: 235px;
+          max-width: 100%;
+        }
+
+        p{
+          padding: 0;
+          margin: 0;
+        }
+
+        .btn-cards{
+          padding: 10px 15px;
+          font-family: $NexaRustSansBook;
+          font-size: 12px;
+          color: #FFF;
+          background: #ed202a;
+          -webkit-border-radius: 4px 4px 4px 4px;
+          border-radius: 4px 4px 4px 4px;
+          display: inline-block;
+
+          &:hover{
+            text-decoration: none;
+            background: darken(#ed202a, 20%);
+          }
+        }
+
+        .btn-details{
+          color: #5e5e5e;
+          background: #cecece;
+
+          &:hover{
+            background: darken(#cecece, 10%);
+          }
+        }
+      }
     }
-  }
 
-  .right-image{
-    text-align: right;
-  }
+    &.services-section{
+      background-image:image-url('about-services-section.jpg');
+      background-position: -55px;
+    }
 
-  .left-image{
-    text-align: left;
-  }
-}
+    &.mechanic-section{
+      background-image:image-url('about-mechanic-section.jpg');
+      background-position: 120%;
+    }
 
-.middle-section{
-  margin-bottom: 100px;
-  margin-top: 100px;
+    .text-to-right{
+      background-color: #e6d3b7;
+      float:right;
+
+      &:before {
+        content: "";
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 35px 50px 35px 0;
+        border-color: transparent #e6d3b7 transparent transparent;
+        position: absolute;
+        left: -30px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    .text-to-left{
+      background: #faf4ec;
+      float:left;
+
+      &:before {
+        content: "";
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 35px 0 35px 50px;
+        border-color: transparent transparent transparent #faf4ec;
+        position: absolute;
+        right: -30px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+      }
+    }
+
+  }
 }

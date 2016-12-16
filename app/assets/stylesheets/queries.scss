@@ -1,50 +1,59 @@
-@media only screen and ( max-width: 1260px ){
-  .home-promo-container #one-fouth .text-container h3{
-    font-size: 5.750em;
+@media only screen and ( min-width: 1700px ){
+  .fluid-container-limit{
+    width: 1440px !important;
+  }
+}
+
+@media only screen and ( max-width: 1450px ){
+  .about-container .custom-section.card-section .petro-point-card-container{
+    padding: 0px;
+  }
+}
+
+@media only screen and ( max-width: 1345px ){
+  .about-container .custom-section .text-container p{
+    font-size: 1.15em;
   }
 
+  .about-container .custom-section .text-container ol li, .about-container .custom-section .text-container ul li{
+    font-size: 1.05em;
+  }
+
+  .about-container .custom-section.services-section{
+    background-position: -150px;
+  }
+
+  .about-container .custom-section.mechanic-section{
+    background-position: 145%;
+  }
+}
+
+@media only screen and ( max-width: 1315px ){
+  .home-promo-container .price-desc-container .inner-wrapper .text-container h3{
+    font-size: 6.750em;
+  }
+
+  .about-container .custom-section.card-section .petro-point-card-container{
+    display: block;
+    margin-bottom: 8px;
+    padding: 25px;
+  }
+
+  .about-container .custom-section.card-section .petro-point-card-container .btn-cards{
+    display: block;
+    margin-bottom: 8px;
+  }
+}
+
+@media only screen and ( max-width: 1260px ){
   .reserve-container .micro-item .text-container .inner-container .inner-wrapper p{
     font-size: 1em;
   }
 }
 
 @media only screen and ( max-width: 1215px ){
-  .about-container #one-fouth .text-container p{
-    font-size: 1.15em;
-  }
-
-  .about-container #one-fouth .image-container{
-    width: 40%;
-
-    img{
-      max-width: 100%;
-    }
-  }
-}
-
-@media only screen and ( max-width: 1135px ){
-  .about-container #one-fouth .text-container p{
-    font-size: .90em;
-  }
-
-  .home-promo-container #one-fouth .text-container{
-    display: inline-block;
-  }
-
-  .home-promo-container #one-fouth .text-container .text-wrapper{
-    width: 100%;
-    text-align: center;
-    padding: 70px;
-  }
-
-  .home-promo-container #one-fouth .image-container{
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-  }
-
-  .reserve-header .inner-container .container .row .col-lg-12 .header-title .text-container img{
-    width: 50% !important;
+  .about-container .custom-section.mechanic-section{
+    background-position: 180%;
   }
 }
 
@@ -62,12 +71,40 @@
     height: 350px;
   }
 
-  #page_header .inner-container .container .row .col-lg-12 .header-title .text-container h1{
+  .header-about .header-title .text-container h1{
     font-size: 2.750em;
+  }
+
+  .header-about .header-title .text-container p{
+    font-size: 1.4em;
+  }
+
+  .reserve-header .inner-container .container .row .col-lg-12 .header-title .text-container h1{
+    font-size: 1.25em;
   }
 
   .reserve-container .micro-item .text-container .inner-container .inner-wrapper p{
     font-size:1.15em;
+  }
+}
+
+@media only screen and ( max-width: 1135px ){
+  .reserve-header .inner-container .container .row .col-lg-12 .header-title .text-container img{
+    width: 50%;
+  }
+
+  .about-container .custom-section.mechanic-section{
+    background-position: 215%;
+  }
+}
+
+@media only screen and ( max-width: 1100px ){
+  .home-promo-container .price-desc-container .inner-wrapper .text-container h3{
+    font-size: 5.750em;
+  }
+
+  .about-container .custom-section.mechanic-section{
+    background-position: 285%;
   }
 }
 
@@ -81,29 +118,52 @@
   }
 }
 
+@media only screen and ( max-width: 1045px ){
+  .about-container .custom-section .text-container{
+    width: 100%;
+  }
+
+  .about-container .custom-section .text-to-right:before,
+  .about-container .custom-section .text-to-left:before{
+    display: none;
+  }
+
+  .about-container .custom-section.card-section .petro-point-card-container{
+    position: relative;
+    width: 100%;
+    top:0;
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  .about-container .custom-section.card-section .petro-point-card-container .petro-point-card{
+    margin-top: 25px;
+  }
+
+  .about-container .custom-section.card-section .petro-point-card-container .btn-cards{
+    display: inline-block;
+  }
+}
+
 @media only screen and ( max-width: 992px ){
-  header .navbar .navbar-collapse .navbar-nav li.add-margin-right{
+  .navbar .container #navbar ul li.add-margin-right{
     margin-right: 0px;
   }
 
-  #page_header .inner-container .container .row .col-lg-12 .header-title .text-container h1{
+  .header-about .header-title .text-container h1{
     font-size: 2em;
   }
 
-  #page_header .inner-container .container .row .col-lg-12 .header-title .text-container p{
+  .header-about .header-title .text-container p{
     font-size: 1.25em;
-  }
-
-  .about-container #one-fouth .text-container{
-    padding: 50px;
-  }
-
-  .about-container #one-fouth .text-container p {
-    font-size: 1.15em;
   }
 
   .reserve-container .micro-item .text-container .inner-container .inner-wrapper p{
     font-size:1.25em;
+  }
+
+  .about-container .custom-section .text-container{
+    width: 100%;
   }
 }
 
@@ -120,28 +180,129 @@ and (-webkit-min-device-pixel-ratio: 1) {
     margin-top: 60px;
   }
 
-  .about-container #one-fouth .text-container{
-    background: #FFF;
-    padding: 0px;
+  .reserve-header .inner-container .container .row .col-lg-12 .header-title .text-container .reserve-logo{
+    width: 40%;
   }
 
-  .about-container #one-fouth .text-container .text-wrapper{
-    width: 100%;
+  .reserve-header .inner-container .container .row .col-lg-12 .header-title .text-container h1{
+    margin-top: 25px !important;
+  }
+}
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 1) {
+  .home-promo-container .price-desc-container .inner-wrapper .text-container{
+    padding: 0px 50px;
+  }
+}
+
+@media (min-width: 768px){
+  .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{
+    margin-left: 0px;
   }
 
-  .about-container #one-fouth .text-container p{
-    font-size: 1.375em;
+  .navbar .fb-link{
+    right:16px;
   }
 
-  .middle-section{
-    margin-bottom: 50px;
-    margin-top: 50px;
+  .navbar .container #navbar ul li a.tablet-remove-padding-right{
+    padding-right: 0px;
+  }
+
+  .home-promo-container .content-container{
+    height: 400px;
+  }
+
+  .home-promo-container{
+    padding-bottom: 125px;
   }
 }
 
 @media ( max-width: 767px ){
-  header .fb-link{
+  .navbar .container .fb-link{
     display: none;
+  }
+
+  .navbar .container #navbar ul li a{
+    color: #c3c3c3;
+  }
+
+  .navbar .container #navbar ul li a img.mobile-facebook{
+    width: 50px;
+  }
+
+  #slippry-slider .sy-slides-wrap .sy-slides-crop .sy-list .sy-slide .inner-container .container .row .col-lg-12 .header-title .text-container img {
+    width: 190px;
+  }
+
+  #slippry-slider .sy-slides-wrap .sy-slides-crop .sy-list .sy-slide .inner-container .container .row .col-lg-12 .header-title .text-container h1{
+    font-size: 0.75em;
+  }
+
+  .navbar .container .navbar-header .navbar-brand img{
+    width: 200px;
+  }
+
+  .navbar .container{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .navbar .container .navbar-header .navbar-toggle{
+    margin-top: 30px;
+  }
+
+  .navbar .container #navbar{
+    margin-top: 0px;
+  }
+
+  #page_header .mobile-landscape-header {
+    display: none;
+  }
+
+  #page_header .mobile-potrait-header {
+    display: initial;
+  }
+
+  .reserve-header .inner-container .container .row .col-lg-12 .header-title .text-container h1{
+    margin-top: 25px !important;
+  }
+
+  .home-promo-container .price-desc-container .inner-wrapper .text-container h2{
+    font-size: 1.5em;
+  }
+
+  .home-promo-slider .slick-next, .home-promo-slider .slick-prev{
+    display: none !important;
+  }
+
+  .home-promo-container{
+    padding-bottom: 70px;
+  }
+
+  .home-promo-container .content-container{
+    height: auto;
+  }
+
+  .home-promo-container .price-desc-container .inner-wrapper .text-container,
+  .home-promo-container .img-promo-container .inner-wrapper .img-container{
+    padding: 40px 25px;
+  }
+
+  .home-promo-container .push-down-mobile{
+    margin-top: 20px;
+  }
+
+  #slippry-slider {
+    margin: 0 0 32%;
+  }
+
+  .home-content .container-fluid {
+    padding-left: 37px;
+    padding-right: 37px;
   }
 
   header .navbar .navbar-collapse .navbar-nav{
@@ -157,11 +318,23 @@ and (-webkit-min-device-pixel-ratio: 1) {
   }
 
   footer .footer-wrapper .pull-right{
-    float: left !important;
+    display: none;
   }
 
   footer .footer-wrapper .footer-copyright-container{
     margin-top: 60px;
+  }
+
+  footer .footer-wrapper .footer-links{
+    display: block;
+
+    ul{
+      display: block;
+      float: none;
+      clear: both;
+      padding-left: 0px;
+      padding-top: 18px;
+    }
   }
 
   .contact-container .top-section, .contact-container .bottom-section{
@@ -180,37 +353,46 @@ and (-webkit-min-device-pixel-ratio: 1) {
     height: 100%;
     float: left;
     width: 100%;
+    padding: 25px;
   }
 
   .contact-container .max-height .contact-item .inner-container{
     position: relative;
   }
 
-  .about-container #one-fouth .text-container{
-    background: #FFF;
-    padding: 0px;
+  .contact-container .bottom-section .form-container{
+    padding: 25px;
+    height: 585px;
   }
 
-  .about-container #one-fouth .text-container .text-wrapper{
-    width: 100%;
+  .about-container .custom-section .text-container .text-wrapper{
+    padding: 45px;
   }
 
-  .about-container #one-fouth .text-container p{
-    font-size: 1.375em;
+  .header-about .header-title .text-container h1{
+    font-size: 1.4em;
   }
 
-  .middle-section{
-    margin-bottom: 50px;
-    margin-top: 50px;
+  .header-about .header-title .text-container p{
+    font-size: 1.15em;
+  }
+}
+
+@media ( max-width: 767px ) and (orientation: landscape){
+  #page_header .mobile-landscape-header {
+    display: initial;
   }
 
-  .add-padding{
-    padding: 40px;
+  #page_header .mobile-potrait-header {
+    display: none;
   }
 
-  .home-content .container-fluid{
-    padding-left: 25px;
-    padding-right: 25px;
+  .reserve-header .header-title .text-container .reserve-logo{
+    width: 40% !important;
+  }
+
+  .reserve-header .header-title .text-container h1{
+    font-size: 1.2em !important;
   }
 }
 
@@ -222,19 +404,28 @@ and (-webkit-min-device-pixel-ratio: 1) {
   .main-content {
     padding: 15px;
   }
-
-  .add-padding {
-    padding: 30px;
-  }
 }
 
 @media ( max-width: 325px ){
-  header .navbar .navbar-header .navbar-brand img{
-    width: 200px;
+  #slippry-slider .sy-slides-wrap .sy-slides-crop .sy-list .sy-slide .inner-container .container .row .col-lg-12 .header-title .text-container img{
+    width: 125px;
   }
 
-  header .navbar .navbar-header .navbar-toggle{
-    margin-top: 32px;
+  .sy-controls li.sy-next a{
+    right: 12px;
+  }
+
+  .sy-controls li.sy-prev a{
+    left:12px;
+  }
+
+  .home-promo-container .price-desc-container .inner-wrapper .text-container h3{
+    font-size: 5.550em;
+  }
+
+  .home-promo-container .price-desc-container .inner-wrapper .text-container h3 sup{
+    font-size: .55em;
+    top: -0.58em;
   }
 
   footer .footer-wrapper .col-xs-12 .footer-links{
@@ -245,7 +436,24 @@ and (-webkit-min-device-pixel-ratio: 1) {
     height: 94px;
   }
 
-  #page_header .inner-container .container .row .col-lg-12 .header-title .text-container h1 {
+  .header-about .header-title .text-container h1 {
     font-size: 1.3em;
+  }
+
+  .header-about .header-title .text-container p {
+    font-size: 1em;
+  }
+
+  .about-container .custom-section .text-container .text-wrapper{
+    padding: 25px;
+  }
+
+  .about-container .custom-section.card-section .petro-point-card-container .btn-cards{
+    display: block;
+  }
+
+  .contact-container .bottom-section .form-container .form-wrapper .form-group button{
+    width: 100%;
+    margin-bottom: 10px;
   }
 }

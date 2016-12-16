@@ -1,7 +1,8 @@
 <%= content_for :page_title, 'contact' %>
 
 <section id="page_header">
-  <img src="http://placehold.it/1920x682"/>
+  <%= image_tag 'contact-header', alt: 'la reserve', class: 'mobile-landscape-header header-img' %>
+  <%= image_tag 'mobile-contact-header', alt: 'la reserve', class: 'mobile-potrait-header  header-img' %>
 </section>
 
 <div class="main-content">
@@ -24,16 +25,14 @@
                       <%= image_tag 'pc-logo-contact', alt: 'Petro-Canada' %>
                     </div>
                     <div class="text-container">
-                      <h2>Dépanneur</h2>
+                      <h2><%= t('contact.address.title').html_safe %></h2>
                       <p>
-                        207, boulevard Bégin<br/>
-                        Sainte-Claire (Québec)<br/>
-                        Canada G0R 2V0
+                        <%= t('contact.address.text').html_safe %>
                       </p>
                       <span class="separator"></span>
                       <p>
-                        <b>T</b> 418 883-2178<br/>
-                        <b>F</b> 418 883-1341
+                        <%= t('contact.address.phone').html_safe %><br/>
+                        <%= t('contact.address.fax').html_safe %>
                       </p>
                     </div>
                   </div>
@@ -50,11 +49,11 @@
                       <%= image_tag 'clock-contact-icon', alt: 'icone' %>
                     </div>
                     <div class="text-container">
-                      <h2>Heures d'ouvertures</h2>
-                      <h3>LUNDI au vendredi</h3>
-                      <p>7h30 à 17h00</p>
-                      <h3>samedi et dimanche</h3>
-                      <p>7h30 à 17h00</p>
+                      <h2><%= t('contact.open_hours.title').html_safe %></h2>
+                      <h3><%= t('contact.open_hours.subtitle_1').html_safe %></h3>
+                      <p><%= t('contact.open_hours.text_1').html_safe %></p>
+                      <h3><%= t('contact.open_hours.subtitle_2').html_safe %></h3>
+                      <p><%= t('contact.open_hours.text_2').html_safe %></p>
                     </div>
                   </div>
                 </div>
@@ -69,25 +68,46 @@
       <div class="bottom-section">
         <div class="col-md-12 col-lg-5 remove-padding max-height">
           <div class="form-container">
-            <h1>Postulez pour un emploi</h1>
+            <h1><%= t('contact.form.title').html_safe %></h1>
 
             <div class="form-wrapper">
-              <div class="form-group">
-                <input type="text" class="form-control" id="inputfname" placeholder="Prénom">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" id="inputlname" placeholder="Nom">
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" id="inputemail" placeholder="Courriel">
-              </div>
-              <div class="form-group">
-                <textarea name="message" class="form-control" id="message" placeholder="Message"></textarea>
-              </div>
-              <div class="form-group btn-container">
-                <button type="button" class="btn btn-default">Joindre CV</button>
-                <button type="button" class="btn btn-default">Envoyer</button>
-              </div>
+              <%= simple_form_for ContactForm.new, url: contacts_path, :html => { id: 'resume_form', :class => '', remote: true, :multipart => true, authenticity_token: true } do |f| %>
+                  <div class="form-group">
+                    <%= f.input :firstname, :required => false, placeholder: "Prénom", label:false, :input_html => { :class => "form-control my-input"}  %>
+                    <!--<input type="text" class="form-control" id="inputfname" placeholder="Prénom">-->
+                  </div>
+                  <div class="form-group">
+                    <%= f.input :lastname, :required => false, placeholder: "Nom", label:false, :input_html => { :class => "form-control my-input"}  %>
+                    <!--<input type="text" class="form-control" id="inputlname" placeholder="Nom">-->
+                  </div>
+                  <div class="form-group">
+                    <%= f.input :email, :required => false, placeholder: "Courriel", label:false, :input_html => { :class => "form-control my-input mail-input"} %>
+                    <!--<input type="email" class="form-control" id="inputemail" placeholder="Courriel">-->
+                  </div>
+                  <div class="form-group">
+                    <%= f.input :message, :required => false, :as => :text, placeholder: "Message", label:false, :input_html => { :class=>"form-control my-input"} %>
+                    <!--<textarea name="message" class="form-control" id="message" placeholder="Message"></textarea>-->
+                  </div>
+                  <div class="form-group btn-container">
+                    <%= f.input :file, :required => false, as: :file, label:false, :input_html => { :class => "btn btn-default upload", :onchange=> "getFileData(this);" } %>
+
+                    <div class="submit-btn job-submit btn btn-default">
+                      <%= t('contact.form.send_btn') %>
+                    </div>
+                    <!--<button type="button" class="btn btn-default">< t('contact.form.curriculum_btn').html_safe %></button>-->
+                    <!--<button type="button" class="btn btn-default">< t('contact.form.send_btn').html_safe %></button>-->
+                  </div>
+
+                  <div class= "hidden">
+                    <%= f.hidden_field :subject, :value => '' %>
+                  </div>
+
+                  <div class="filename-container">
+                    <p class="upload-filename"></p>
+                    <p class="upload-error"></p>
+                  </div>
+                  <p class="return-msg"></p>
+              <% end %>
             </div>
           </div>
         </div>
@@ -101,19 +121,18 @@
                       <%= image_tag 'mechanic-icon', alt: 'icone' %>
                     </div>
                     <div class="text-container">
-                      <h2>atelier de mécanique<br/>et administration</h2>
+                      <h2><%= t('contact.mechanic.title').html_safe %></h2>
                       <p>
-                        208, boulevard Bégin<br/>
-                        Sainte-Claire (Québec)<br/>
-                        Canada G0R 2V0
+                        <%= t('contact.mechanic.text').html_safe %>
                       </p>
                       <span class="separator"></span>
                       <p>
-                        <b>T</b> 418 883-3734<br/>
-                        <b>F</b> 418 883-2355
+                        <%= t('contact.mechanic.phone').html_safe %><br/>
+                        <%= t('contact.mechanic.fax').html_safe %>
                       </p>
                       <span class="separator"></span>
                       <a href="mailto:&#101;&#114;&#105;&#99;&#64;&#101;&#110;&#116;&#114;&#101;&#112;&#114;&#105;&#115;&#101;&#115;&#111;&#102;&#97;&#114;&#114;&#101;&#108;&#108;&#46;&#99;&#111;&#109;">&#101;&#114;&#105;&#99;&#64;&#101;&#110;&#116;&#114;&#101;&#112;&#114;&#105;&#115;&#101;&#115;&#111;&#102;&#97;&#114;&#114;&#101;&#108;&#108;&#46;&#99;&#111;&#109;</a>
+                      <a href="mailto:&#101;&#116;&#105;&#101;&#110;&#110;&#101;&#64;&#101;&#110;&#116;&#114;&#101;&#112;&#114;&#105;&#115;&#101;&#115;&#111;&#102;&#97;&#114;&#114;&#101;&#108;&#108;&#46;&#99;&#111;&#109;">&#101;&#116;&#105;&#101;&#110;&#110;&#101;&#64;&#101;&#110;&#116;&#114;&#101;&#112;&#114;&#105;&#115;&#101;&#115;&#111;&#102;&#97;&#114;&#114;&#101;&#108;&#108;&#46;&#99;&#111;&#109;</a>
                     </div>
                   </div>
                 </div>
@@ -129,15 +148,15 @@
                       <%= image_tag 'clock-contact-icon', alt: 'icone' %>
                     </div>
                     <div class="text-container">
-                      <h2>Heures d'ouvertures</h2>
-                      <h3>LUNDI <p>7h30 à 17h00</p></h3>
-                      <h3>Mardi <p>7h30 à 17h00</p></h3>
-                      <h3>Mecredi <p>7h30 à 17h00</p></h3>
-                      <h3>Jeudi <p>7h30 à 17h00</p></h3>
-                      <h3>Vendredi <p>7h30 à 17h00</p></h3>
-                      <h3>Samedi <p>7h30 à 17h00</p></h3>
+                      <h2><%= t('contact.mechanic_open_hours.title').html_safe %></h2>
+                      <h3><%= t('contact.mechanic_open_hours.monday').html_safe %></h3>
+                      <h3><%= t('contact.mechanic_open_hours.tuesday').html_safe %></h3>
+                      <h3><%= t('contact.mechanic_open_hours.wednesday').html_safe %></h3>
+                      <h3><%= t('contact.mechanic_open_hours.thursday').html_safe %></h3>
+                      <h3><%= t('contact.mechanic_open_hours.friday').html_safe %></h3>
+                      <h3><%= t('contact.mechanic_open_hours.saturday').html_safe %></h3>
                       <span class="separator"></span>
-                      <p>Ouvert le samedi pour la période des<br/>pneus au printemps et à l’automne</p>
+                      <p><%= t('contact.mechanic_open_hours.subtext').html_safe %></p>
                     </div>
                   </div>
                 </div>

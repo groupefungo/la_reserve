@@ -126,6 +126,7 @@ GEM
     erubis (2.7.0)
     execjs (2.7.0)
     fabrication (2.15.0)
+    ffi (1.9.10)
     ffi (1.9.10-x64-mingw32)
     font-awesome-rails (4.6.3.0)
       railties (>= 3.2, < 5.1)
@@ -176,11 +177,15 @@ GEM
     minitest (5.9.0)
     multi_json (1.12.1)
     multi_test (0.1.2)
+    mysql2 (0.4.4)
     mysql2 (0.4.4-x64-mingw32)
     nested_form (0.3.2)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (3.1.1)
+    nokogiri (1.6.8)
+      mini_portile2 (~> 2.1.0)
+      pkg-config (~> 1.1.7)
     nokogiri (1.6.8-x64-mingw32)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
@@ -300,6 +305,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+    sqlite3 (1.3.11)
     sqlite3 (1.3.11-x64-mingw32)
     sshkit (1.9.0)
       net-scp (>= 1.1.2)
@@ -329,6 +335,7 @@ GEM
       nokogiri (~> 1.3)
 
 PLATFORMS
+  ruby
   x64-mingw32
 
 DEPENDENCIES
@@ -386,4 +393,4 @@ DEPENDENCIES
   webmock
 
 BUNDLED WITH
-   1.11.2
+   1.13.6

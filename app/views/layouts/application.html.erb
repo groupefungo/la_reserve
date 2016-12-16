@@ -5,6 +5,7 @@
   <% #favicon_link_tag 'favicon.ico' %>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
@@ -21,37 +22,33 @@
   <!--GOOGLE ANALYTICS-->
 </head>
 <body>
-<header>
+<div class="overlay"></div>
+<nav class="navbar navbar-static-top">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <a href="#" class="fb-link"><%= image_tag 'facebook-icon', alt: 'Facebook' %></a>
-        <nav class="navbar navbar-default">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="/"><%= image_tag 'petro-canada-logo-stclaire', alt: 'Petro-Canada' %></a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                <li class="add-margin-right <%= params[:id] == 'a-propos' ? 'active-link' : '' %>"><a href="/a-propos/">À propos <span class="underline"></span></a></li>
-                <li class="add-margin-right"><a href="#">Nos Produits <span class="underline"></span></a></li>
-                <li class="add-margin-right <%= params[:id] == 'la-reserve' ? 'active-link' : '' %>"><a href="/la-reserve/">La Réserve <span class="underline"></span></a></li>
-                <li class="<%= params[:id] == 'contact' ? 'active-link' : '' %>"><a href="/contact/">Contactez-nous <span class="underline"></span></a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-        </nav>
-      </div>
+    <a href="#" class="fb-link"><%= image_tag 'facebook-icon', alt: 'Facebook' %></a>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed pull-right" data-toggle="offcanvas">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/"><%= image_tag 'petro-canada-logo-stclaire', alt: 'Petro-Canada' %></a>
     </div>
+    <div id="navbar" class="collapse navbar-collapse sidebar-offcanvas pull-right">
+      <ul class="nav navbar-nav">
+        <li class="hidden-lg hidden-md"><a href="/"><%=	t('master.top_menu.home').html_safe %></a></li>
+        <li class="add-margin-right hidden-sm hidden-xs <%= params[:id] == 'a-propos' ? 'active-link' : '' %>"><a href="/a-propos/"><%=	t('master.top_menu.about').html_safe %> <span class="underline"></span></a></li>
+        <li class="add-margin-right hidden-sm hidden-xs"><a href="#"><%=	t('master.top_menu.products').html_safe %> <span class="underline"></span></a></li>
+        <li class="add-margin-right <%= params[:id] == 'la-reserve' ? 'active-link' : '' %>"><a href="/la-reserve/"><%=	t('master.top_menu.reserve').html_safe %> <span class="underline"></span></a></li>
+        <li class="<%= params[:id] == 'contact' ? 'active-link' : '' %>"><a href="/contact/" class="tablet-remove-padding-right"><%=	t('master.top_menu.contact').html_safe %> <span class="underline"></span></a></li>
+        <li class="hidden-lg hidden-md hidden-sm">
+          <a href="#"><%= image_tag 'facebook-footer-icon', alt: 'Facebook', class: 'mobile-facebook' %></a>
+        </li>
+      </ul>
+    </div><!--/.nav-collapse -->
   </div>
-</header>
+</nav>
 
 <%= yield %>
 
@@ -61,27 +58,27 @@
       <div class="row">
         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
           <div class="footer-title">
-            <h2>Liens<br/>rapides</h2>
+            <h2><%=	t('footer.menu_links_text').html_safe %></h2>
           </div>
           <div class="footer-links">
-            <ul class="mobile-footer-links">
-              <li><a href="/a-propos/">À propos</a></li>
-              <li><a href="#">Nos produits</a></li>
+            <ul class="mobile-footer-links hidden-xs">
+              <li><a href="/a-propos/"><%=	t('master.top_menu.about').html_safe %></a></li>
+              <li><a href="#"><%=	t('master.top_menu.products').html_safe %></a></li>
             </ul>
             <ul>
-              <li><a href="/la-reserve/">La Réserve</a></li>
-              <li><a href="/contact/">Contactez-nous</a></li>
+              <li><a href="/la-reserve/"><%=	t('master.top_menu.reserve').html_safe %></a></li>
+              <li><a href="/contact/"><%=	t('master.top_menu.contact').html_safe %></a></li>
             </ul>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="social-media-wrapper pull-right">
             <div class="footer-title">
-              <h2>Suivez-<br/>nous</h2>
+              <h2><%=	t('footer.social_media_text').html_safe %></h2>
             </div>
             <div class="footer-links ">
               <ul>
-                <li><a href="#"><%= image_tag 'facebook-footer-icon', alt: 'Facebook' %></a></li>
+                <li><a href="https://www.facebook.com/petrocanadasteclaire/?fref=ts" target="_blank"><%= image_tag 'facebook-footer-icon', alt: 'Facebook' %></a></li>
               </ul>
             </div>
           </div>
@@ -93,11 +90,11 @@
         <div class="col-lg-12">
           <div class="footer-copyright-container">
             <div class="footer-copyright-wrapper">
-              <p class="pull-left">Copyright © 2016</p>
+              <p class="pull-left"><%=	t('footer.copyright').html_safe %></p>
               <ul class="pull-right">
-                <li><a href="">Confidentialité</a></li>
+                <li><a href=""><%=	t('footer.confidentiality').html_safe %></a></li>
                 <li><span>|</span></li>
-                <li><a href="">Légal</a></li>
+                <li><a href=""><%=	t('footer.legal').html_safe %></a></li>
               </ul>
             </div>
           </div>
@@ -108,7 +105,7 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="copyright-text">
-            <p>Tous droits réservés. L’utilisation de ce site signifie que vous consentez aux modalités d’utilisation de la présente entente.</p>
+            <p><%=	t('footer.rights').html_safe %></p>
           </div>
         </div>
       </div>

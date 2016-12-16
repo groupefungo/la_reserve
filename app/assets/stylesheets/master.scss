@@ -1,7 +1,7 @@
 #page_header{
   position: relative;
 
-  img{
+  .header-img{
     width: 100%;
     max-width: 100%;
   }
@@ -42,7 +42,6 @@
                 color: #FFF;
                 text-transform: uppercase;
                 font-family: $TradeGothicBold;
-                font-size: 3.750em;
                 font-weight: 500;
                 letter-spacing: 2px;
                 line-height: 1.5;
@@ -52,7 +51,8 @@
               }
 
               p{
-                font-size: 1.875em;
+                font-family: Arial;
+                font-weight: normal;
                 color: #FFF;
               }
             }
@@ -64,5 +64,9 @@
 }
 
 .main-content{
-  padding: 70px;
+  padding: 50px;
+}
+
+.ui-loader-default{
+  display: none;
 }

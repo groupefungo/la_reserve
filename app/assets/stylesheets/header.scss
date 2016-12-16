@@ -1,8 +1,5 @@
-header{
-  background: #FFF;
-  position: relative;
-  z-index: 15;
-  height: 119px;
+.navbar{
+  margin-bottom: 0px;
 
   .fb-link{
     position: absolute;
@@ -15,34 +12,54 @@ header{
     }
   }
 
-  .navbar{
-    min-height: initial;
-    margin-bottom: 0px;
+  .container{
+    position: relative;
 
     .navbar-header{
-      .navbar-brand{
-        padding: 0;
-        line-height: 0;
-        height: initial;
-      }
+      background: none;
+      z-index: 40;
 
       .navbar-toggle{
-        margin-top: 42px;
+        margin-top: 44px;
         margin-right: 0px;
+
+        .icon-bar{
+          background: #000;
+          width: 34px;
+        }
+
+        &:not(.collapsed) .icon-bar:nth-child(2){
+          top: 7px;
+          position: relative;
+        }
+      }
+
+      .navbar-brand{
+        padding: 0px;
+        font-size: initial;
+        line-height: initial;
+        height: auto;
+
+        img{
+
+        }
       }
     }
 
-    .navbar-collapse{
-      .navbar-nav{
-        top: 64px;
-        position: relative;
+    #navbar{
+      margin-top: 67px;
 
+      ul{
         li{
           font-family: $TradeGothicBold;
           font-size: 1.125em;
 
           a{
             color: #363636;
+            -webkit-transition: color .25s ease-in-out;
+            -moz-transition: color .25s ease-in-out;
+            -o-transition: color .25s ease-in-out;
+            transition: color .25s ease-in-out;
 
             span.underline{
               width: 0%;
@@ -59,10 +76,15 @@ header{
 
             &:hover{
               color: #ed202a;
+              background: none;
 
               span.underline{
                 width: 100%;
               }
+            }
+
+            &:focus{
+              background: none;
             }
           }
 
@@ -72,6 +94,8 @@ header{
 
           &.active-link{
             a{
+              color: #ed202a;
+
               span.underline{
                 width: 100%;
               }
@@ -80,10 +104,5 @@ header{
         }
       }
     }
-  }
-
-  .navbar-default{
-    background-color: #FFF;
-    border: none;
   }
 }

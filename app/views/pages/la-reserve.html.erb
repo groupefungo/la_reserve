@@ -1,7 +1,8 @@
 <%= content_for :page_title, 'La Réserve' %>
 
 <section id="page_header" class="reserve-header">
-  <%= image_tag 'reserve-header', alt: 'la reserve' %>
+  <%= image_tag 'reserve-header', alt: 'la reserve', class: 'mobile-landscape-header header-img' %>
+  <%= image_tag 'mobile-reserve-header', alt: 'la reserve', class: 'mobile-potrait-header  header-img' %>
 
   <div class="inner-container">
     <div class="container">
@@ -9,8 +10,8 @@
         <div class="col-lg-12">
           <div class="header-title">
             <div class="text-container">
-              <%= image_tag 'reserve-page-logo', alt: 'la réserve' %>
-              <h1 class="hidden-xs">
+              <%= image_tag 'reserve-page-logo', alt: 'la réserve', class: 'reserve-logo' %>
+              <h1>
                 Le nouvel espace microbrasserie<br/>de Petro-Canada
               </h1>
             </div>
@@ -21,61 +22,688 @@
   </div>
 </section>
 
-<div class="main-content">
-  <div class="reserve-container">
-    <div class="container-fluid">
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-        <div class="micro-item">
-          <img src="http://placehold.it/500x500">
-          <div class="text-container">
-            <div class="inner-container">
-              <div class="inner-wrapper">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar sapien sodales turpis aliquam
-                  dapibus. Mauris a erat sit amet massa porta scelerisque ac at velit.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-        <div class="micro-item">
-          <img src="http://placehold.it/500x500">
-          <div class="text-container">
-            <div class="inner-container">
-              <div class="inner-wrapper">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar sapien sodales turpis aliquam
-                  dapibus. Mauris a erat sit amet massa porta scelerisque ac at velit.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-        <div class="micro-item">
-          <img src="http://placehold.it/500x500">
-          <div class="text-container">
-            <div class="inner-container">
-              <div class="inner-wrapper">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar sapien sodales turpis aliquam
-                  dapibus. Mauris a erat sit amet massa porta scelerisque ac at velit.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-        <div class="micro-item">
-          <img src="http://placehold.it/500x500">
-          <div class="text-container">
-            <div class="inner-container">
-              <div class="inner-wrapper">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar sapien sodales turpis aliquam
-                  dapibus. Mauris a erat sit amet massa porta scelerisque ac at velit.</p>
+
+<div class="reserve-container">
+  <div class="container-fluid full-width-container">
+    <!--01-Archibald-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/01-archibald', alt: t('reserve.archibald_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.archibald_title').html_safe %></h3>
+                <p><%= t('reserve.archibald_text').html_safe %></p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!--02-bilboquet-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/02-bilboquet', alt: t('reserve.bilboquet_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.bilboquet_title').html_safe %></h3>
+                <p><%= t('reserve.bilboquet_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--03-chouape-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/03-chouape', alt: t('reserve.chouape_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.chouape_title').html_safe %></h3>
+                <p><%= t('reserve.chouape_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--04-br-generale-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/04-br-generale', alt: t('reserve.brgenerale_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.brgenerale_title').html_safe %></h3>
+                <p><%= t('reserve.brgenerale_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--05-br-illimites-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/05-br-illimites', alt: t('reserve.brilimites_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.brilimites_title').html_safe %></h3>
+                <p><%= t('reserve.brilimites_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--06-br-du-monde-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/06-br-du-monde', alt: t('reserve.brmonde_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.brmonde_title').html_safe %></h3>
+                <p><%= t('reserve.brmonde_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--07-corsaire-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/07-corsaire', alt: t('reserve.corsaire_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.corsaire_title').html_safe %></h3>
+                <p><%= t('reserve.corsaire_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--08-br-deux-freres-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/08-deux-freres', alt: t('reserve.brdeuxfreres_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.brdeuxfreres_title').html_safe %></h3>
+                <p><%= t('reserve.brdeuxfreres_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--09-farnham-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/09-farnham', alt: t('reserve.farnham_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.farnham_title').html_safe %></h3>
+                <p><%= t('reserve.farnham_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--10-dieu-du-ciel-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/010-dieu-du-ciel', alt: t('reserve.dieuduciel_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.dieuduciel_title').html_safe %></h3>
+                <p><%= t('reserve.dieuduciel_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--11-alchimiste-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/011-alchimiste', alt: t('reserve.alchimiste_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.alchimiste_title').html_safe %></h3>
+                <p><%= t('reserve.alchimiste_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--12-charlevoix-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/012-charlevoix', alt: t('reserve.charlevoix_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.charlevoix_title').html_safe %></h3>
+                <p><%= t('reserve.charlevoix_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--13-lac-st-jean-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/013-lac-st-jean', alt: t('reserve.lacstjean_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.lacstjean_title').html_safe %></h3>
+                <p><%= t('reserve.lacstjean_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--14-barberie-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/014-barberie', alt: t('reserve.barberie_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.barberie_title').html_safe %></h3>
+                <p><%= t('reserve.barberie_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--15-naufrageur-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/015-naufrageur', alt: t('reserve.naufrageur_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.naufrageur_title').html_safe %></h3>
+                <p><%= t('reserve.naufrageur_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--16-lion-or-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/016-lion-or', alt: t('reserve.lionor_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.lionor_title').html_safe %></h3>
+                <p><%= t('reserve.lionor_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--17-bockale-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/017-bockale', alt: t('reserve.bockale_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.bockale_title').html_safe %></h3>
+                <p><%= t('reserve.bockale_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--18-pit-caribou-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/018-pit-caribou', alt: t('reserve.pitcaribou_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.pitcaribou_title').html_safe %></h3>
+                <p><%= t('reserve.pitcaribou_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--19-frampton-brasse-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/019-frampton-brasse', alt: t('reserve.framptonbr_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.framptonbr_title').html_safe %></h3>
+                <p><%= t('reserve.framptonbr_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--20-trou-du-diable-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/020-trou-du-diable', alt: t('reserve.troududiable_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.troududiable_title').html_safe %></h3>
+                <p><%= t('reserve.troududiable_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--21-brasseursrj-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/021-br-rj', alt: t('reserve.brasseursrj_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.brasseursrj_title').html_safe %></h3>
+                <p><%= t('reserve.brasseursrj_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--22-mcauslan-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/022-mcauslan', alt: t('reserve.mcauslan_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.mcauslan_title').html_safe %></h3>
+                <p><%= t('reserve.mcauslan_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--23-beaus-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/023-beaus', alt: t('reserve.beaus_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.beaus_title').html_safe %></h3>
+                <p><%= t('reserve.beaus_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--24-boreale-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/024-boreale', alt: t('reserve.brdunord_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.brdunord_title').html_safe %></h3>
+                <p><%= t('reserve.brdunord_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--25-br-du-temps-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/025-br-du-temps', alt: t('reserve.brdutemps_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.brdutemps_title').html_safe %></h3>
+                <p><%= t('reserve.brdutemps_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--26-la-trappe-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/026-la-trappe', alt: t('reserve.latrappe_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.latrappe_title').html_safe %></h3>
+                <p><%= t('reserve.latrappe_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--27-mons-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/027-mons', alt: t('reserve.mons_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.mons_title').html_safe %></h3>
+                <p><%= t('reserve.mons_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--28-glutenberg-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/028-glutenberg', alt: t('reserve.glutenberg_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.glutenberg_title').html_safe %></h3>
+                <p><%= t('reserve.glutenberg_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--29-bellechasse-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/029-bellechasse', alt: t('reserve.bellechasse_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.bellechasse_title').html_safe %></h3>
+                <p><%= t('reserve.bellechasse_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--30-goose-island-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/030-goose-island', alt: t('reserve.gooseisland_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.gooseisland_title').html_safe %></h3>
+                <p><%= t('reserve.gooseisland_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--31-creemore-spring-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/031-creemore-spring', alt: t('reserve.creemorespring_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.creemorespring_title').html_safe %></h3>
+                <p><%= t('reserve.creemorespring_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--32-grandville-island-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/032-grandville-island', alt: t('reserve.grandvilleisland_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.grandvilleisland_title').html_safe %></h3>
+                <p><%= t('reserve.grandvilleisland_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--33-moosehead-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/033-moosehead', alt: t('reserve.moosehead_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.moosehead_title').html_safe %></h3>
+                <p><%= t('reserve.moosehead_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--34-nouvelle-france-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/034-nouvelle-france', alt: t('reserve.nouvellefrance_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.nouvellefrance_title').html_safe %></h3>
+                <p><%= t('reserve.nouvellefrance_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--35-le-castor-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/035-le-castor', alt: t('reserve.lecastor_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.lecastor_title').html_safe %></h3>
+                <p><%= t('reserve.lecastor_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--36-grimoire-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/036-grimoire', alt: t('reserve.grimoire_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.grimoire_title').html_safe %></h3>
+                <p><%= t('reserve.grimoire_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--37-hopera-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/037-hopera', alt: t('reserve.hopera_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.hopera_title').html_safe %></h3>
+                <p><%= t('reserve.hopera_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--38-tour-a-biere-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/038-tour-a-biere', alt: t('reserve.tourabiere_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.tourabiere_title').html_safe %></h3>
+                <p><%= t('reserve.tourabiere_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--39-dunham-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/039-dunham', alt: t('reserve.dunham_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.dunham_title').html_safe %></h3>
+                <p><%= t('reserve.dunham_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--41-voie-maltee-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+      <div class="micro-item">
+        <div class="content-wrapper">
+          <div class="inner-wrapper">
+            <div class="wrapper">
+              <%= image_tag 'reserve-logos/041-voie-maltee', alt: t('reserve.voiemaltee_title'), class: 'logo-img' %>
+              <div class="text-container">
+                <h3><%= t('reserve.voiemaltee_title').html_safe %></h3>
+                <p><%= t('reserve.voiemaltee_text').html_safe %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>

@@ -18,5 +18,6 @@
 //= require bootstrap-sprockets
 //= require slippry.min
 //= require slick.min
+//= require gs/TweenMax.min
+//= require gmap
 //= require main
-//= require_tree .
