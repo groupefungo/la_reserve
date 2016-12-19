@@ -168,6 +168,7 @@ fr:
       title: "Postulez pour un emploi"
       curriculum_btn: "Joindre CV"
       send_btn: "Envoyer"
+      required_fields: "Tous les champs sont obligatoires"
     mechanic:
       title: "atelier de mécanique<br/>et administration"
       text: "208, boulevard Bégin<br/>Sainte-Claire (Québec)<br/>Canada G0R 2V0"

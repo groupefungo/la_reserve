@@ -98,49 +98,110 @@ var ready = function(){
         });
     }
 
+    //Contact form custom validation
     if($('.form-container').length > 0){
+        var fname = $('#contact_form_firstname');
+        var fnamegroup = $('.fname-frm-grp');
+        var lname = $('#contact_form_lastname');
+        var lnamegroup = $('.lname-frm-grp');
+        var email = $('#contact_form_email');
+        var mailgroup = $('.mail-frm-grp');
+        var message = $('#contact_form_message');
+        var msggroup = $('.msg-frm-grp');
+        var allfields = $('input[type=text],input[type=email],input[type=file],textarea');
+        var totalfields = allfields.length;
+        var fileok = 0;
+
+        //On input change events
+        fname.on('change',function(){
+           if($(this).val() == ""){
+               $(this).removeClass('input-ok');
+               $(this).addClass('input-error');
+               fnamegroup.find('span.glyphicon').removeClass('glyphicon-ok').addClass('glyphicon-remove');
+           }
+           else{
+               $(this).addClass('input-ok');
+               fnamegroup.find('span.glyphicon').removeClass('glyphicon-remove').addClass('glyphicon-ok');
+           }
+        });
+
+        lname.on('change',function(){
+            if($(this).val() == ""){
+                $(this).removeClass('input-ok');
+                $(this).addClass('input-error');
+                lnamegroup.find('span.glyphicon').removeClass('glyphicon-ok').addClass('glyphicon-remove');
+            }
+            else{
+                $(this).addClass('input-ok');
+                lnamegroup.find('span.glyphicon').removeClass('glyphicon-remove').addClass('glyphicon-ok');
+            }
+        });
+
+        email.on('change',function(){
+            if($(this).val() == ""){
+                $(this).removeClass('input-ok');
+                $(this).addClass('input-error');
+                mailgroup.find('span.glyphicon').removeClass('glyphicon-ok').addClass('glyphicon-remove');
+            }
+            else{
+                if(isValidEmailAddress($(this).val())){
+                    $(this).addClass('input-ok');
+                    mailgroup.find('span.glyphicon').removeClass('glyphicon-remove').addClass('glyphicon-ok');
+                }
+                else{
+                    $(this).removeClass('input-ok');
+                    $(this).addClass('input-error');
+                    mailgroup.find('span.glyphicon').removeClass('glyphicon-ok').addClass('glyphicon-remove');
+                }
+            }
+        });
+
+        message.on('change',function(){
+            if($(this).val() == ""){
+                $(this).removeClass('input-ok');
+                $(this).addClass('input-error');
+                msggroup.find('span.glyphicon').removeClass('glyphicon-ok').addClass('glyphicon-remove');
+            }
+            else{
+                $(this).addClass('input-ok');
+                msggroup.find('span.glyphicon').removeClass('glyphicon-remove').addClass('glyphicon-ok');
+            }
+        });
+
+        //Validate that all fields are not empty, if true, form is valid for submitting
+        allfields.on('change',function(){
+            allfields.each(function () {
+                if($(this).hasClass('input-ok')){
+                    fileok++;
+                }
+            });
+
+            if(fileok == 15){
+                fileok = 5;
+            }
+
+            if(fileok == totalfields){
+                $('.job-submit').removeClass('no-submit');
+                $('#resume_form').addClass('form-passed');
+            }
+            else{
+                fileok = 0;
+                $('.job-submit').addClass('no-submit');
+                $('#resume_form').removeClass('form-passed');
+            }
+        });
+
+        //On fake submit button clicked, submit the form
+        //Validates that form is valid for submission, else prevent form submit
         $('.job-submit').on('click',function(e){
-            var fname = $('#contact_form_firstname');
-            var lname = $('#contact_form_lastname');
-            var email = $('#contact_form_email');
-            var message = $('#contact_form_message');
-
-            console.log('hello')
-
-            if(fname == ""){
-                fname.addClass('form-error');
+            if($('#resume_form').hasClass('form-passed')){
+                $('#resume_form').submit();
+            }
+            else{
                 e.preventDefault();
                 return false;
             }
         });
-
-        // $('button').on('click',function(e){
-        //     var fname = $('#contact_form_firstname');
-        //     var lname = $('#contact_form_lastname');
-        //     var email = $('#contact_form_email');
-        //     var message = $('#contact_form_message');
-        //
-        //     console.log('hello')
-        //
-        //     if(fname == ""){
-        //         e.preventDefault();
-        //         return false;
-        //     }
-        // });
-        //
-        // $('.job-submit').on('submit',function(e){
-        //     var fname = $('#contact_form_firstname');
-        //     var lname = $('#contact_form_lastname');
-        //     var email = $('#contact_form_email');
-        //     var message = $('#contact_form_message');
-        //
-        //     console.log('hello')
-        //
-        //     if(fname == ""){
-        //         e.preventDefault();
-        //         return false;
-        //     }
-        // });
     }
 
     //Window resize event
@@ -162,10 +223,14 @@ function getFileData(myFile) {
     var ext = filename.split('.').pop();
     if (ext == "pdf" || ext == "docx" || ext == "doc") {
         $('.upload-filename').html("Fichier joint: " + filename);
+        $('.upload').removeClass('input-error');
+        $('.upload').addClass('input-ok');
         $('.upload-error').html("");
     } else {
         $('.upload-error').html("Ce type de fichier n'est pas accepté. Seulement les types .PDF, .DOCX et .DOC sont acceptés.");
         document.getElementById('contact_form_file').value = null;
+        $('.upload').removeClass('input-ok');
+        $('.upload').addClass('input-error');
         $('.upload-filename').html("");
     }
 }

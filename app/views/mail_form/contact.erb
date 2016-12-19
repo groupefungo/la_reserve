@@ -1,5 +1,5 @@
 <h4 style="text-decoration:underline"><%= message.subject %></h4>
-<%
+<% attributes_to_reject = ['email_to', 'subject']
    attributes = @resource.mail_form_attributes
    attributes = attributes.delete_if { |x| attributes_to_reject.include?(x) } %>
 

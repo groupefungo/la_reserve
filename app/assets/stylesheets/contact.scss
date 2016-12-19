@@ -58,6 +58,11 @@
     .map-container{
       background: #f6ebd7;
       height: 655px;
+
+      #map-canvas{
+        width: 100%;
+        height: 100%;
+      }
     }
 
     .info-wrapper{
@@ -95,7 +100,17 @@
         font-weight:700;
         text-transform: uppercase;
         margin: 0;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
+      }
+
+      h4{
+        font-size: .875em;
+        color: #FFF;
+        margin-top: 0px;
+
+        em{
+          font-size: 1.5em;
+        }
       }
 
       .form-wrapper{
@@ -107,19 +122,97 @@
           textarea{
             padding: 15px 25px 25px 25px;
             height: 100px;
+            resize: none;
           }
 
-          button{
+          .submit-btn{
+            vertical-align: top;
+            width: 150px;
+            padding: 10px 12px;
+            cursor: pointer;
             background: #363636;
             color: #FFF;
-            border: none;
-            width: 125px;
-            padding: 10px 0px;
+            border:none;
+
+            &:hover{
+              background: lighten(#363636, 10%);
+            }
+
+            &.no-submit{
+              -moz-opacity: 0.5;
+              -khtml-opacity: 0.5;
+              opacity: 0.5;
+              cursor: not-allowed;
+
+              &:hover{
+                background: #363636;
+              }
+            }
+          }
+
+          .upload-wrapper{
+            position: relative;
+            background: #363636;
+            height: 40px;
+            width: 150px;
+            text-align: center;
+            -webkit-border-radius: 4px 4px 4px 4px;
+            border-radius: 4px 4px 4px 4px;
+            display: inline-block;
+            cursor: pointer;
+            overflow: hidden;
+
+            .contact_form_file{
+              input[type=file]{
+                -moz-opacity: 0;
+                -khtml-opacity: 0;
+                opacity: 0;
+                position: absolute;
+                top:0;
+                left:0;
+                z-index: 50;
+                font-size: 10.5px;
+                padding: 9px 0px;
+              }
+            }
+
+            span{
+              position: absolute;
+              top:10px;
+              left:0;
+              color: #FFF;
+              width: 100%;
+              z-index: 1;
+            }
+
+            &:hover{
+              background: lighten(#363636, 10%);
+            }
+          }
+
+          &.has-feedback{
+            span.form-control-feedback{
+              height: 52px;
+              line-height: 52px;
+
+              &.glyphicon-ok{
+                color: #388a34;
+              }
+
+              &.glyphicon-remove{
+                color: #a94442;
+              }
+            }
           }
         }
 
         .btn-container{
           margin-top: 45px;
+        }
+
+        .return-msg{
+          color: #e6e6e6;
+          font-weight: 600;
         }
       }
     }

@@ -11,7 +11,6 @@
       <div class="top-section">
         <div class="col-md-12 col-lg-5 remove-padding">
           <div class="map-container">
-            test
             <div id="map-canvas"></div>
           </div>
         </div>
@@ -69,33 +68,35 @@
         <div class="col-md-12 col-lg-5 remove-padding max-height">
           <div class="form-container">
             <h1><%= t('contact.form.title').html_safe %></h1>
+            <h4><em>*</em> <%= t('contact.form.required_fields').html_safe %></h4>
 
             <div class="form-wrapper">
-              <%= simple_form_for ContactForm.new, url: contacts_path, :html => { id: 'resume_form', :class => '', remote: true, :multipart => true, authenticity_token: true } do |f| %>
-                  <div class="form-group">
+              <%= simple_form_for ContactForm.new, url: contacts_path, :html => { id: 'resume_form', :class => ''}, remote: true, :multipart => true, authenticity_token: true  do |f| %>
+                  <div class="form-group has-feedback fname-frm-grp">
                     <%= f.input :firstname, :required => false, placeholder: "Prénom", label:false, :input_html => { :class => "form-control my-input"}  %>
-                    <!--<input type="text" class="form-control" id="inputfname" placeholder="Prénom">-->
+                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                   </div>
-                  <div class="form-group">
+                  <div class="form-group has-feedback lname-frm-grp">
                     <%= f.input :lastname, :required => false, placeholder: "Nom", label:false, :input_html => { :class => "form-control my-input"}  %>
-                    <!--<input type="text" class="form-control" id="inputlname" placeholder="Nom">-->
+                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                   </div>
-                  <div class="form-group">
+                  <div class="form-group has-feedback mail-frm-grp">
                     <%= f.input :email, :required => false, placeholder: "Courriel", label:false, :input_html => { :class => "form-control my-input mail-input"} %>
-                    <!--<input type="email" class="form-control" id="inputemail" placeholder="Courriel">-->
+                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                   </div>
-                  <div class="form-group">
+                  <div class="form-group has-feedback msg-frm-grp">
                     <%= f.input :message, :required => false, :as => :text, placeholder: "Message", label:false, :input_html => { :class=>"form-control my-input"} %>
-                    <!--<textarea name="message" class="form-control" id="message" placeholder="Message"></textarea>-->
+                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                   </div>
                   <div class="form-group btn-container">
-                    <%= f.input :file, :required => false, as: :file, label:false, :input_html => { :class => "btn btn-default upload", :onchange=> "getFileData(this);" } %>
+                    <div class="upload-wrapper">
+                      <%= f.input :file, :required => false, as: :file, label:false, :input_html => { :class => "btn btn-default upload", :onchange=> "getFileData(this);" } %>
+                      <span><%= t('contact.form.curriculum_btn').html_safe %></span>
+                    </div>
 
-                    <div class="submit-btn job-submit btn btn-default">
+                    <div class="submit-btn job-submit btn btn-default no-submit">
                       <%= t('contact.form.send_btn') %>
                     </div>
-                    <!--<button type="button" class="btn btn-default">< t('contact.form.curriculum_btn').html_safe %></button>-->
-                    <!--<button type="button" class="btn btn-default">< t('contact.form.send_btn').html_safe %></button>-->
                   </div>
 
                   <div class= "hidden">

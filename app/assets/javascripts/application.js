@@ -19,5 +19,7 @@
 //= require slippry.min
 //= require slick.min
 //= require gs/TweenMax.min
-//= require gmap
+//= require jquery.remotipart
+//= require contact_form
+//= require gmap.js.erb
 //= require main

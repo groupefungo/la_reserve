@@ -51,6 +51,13 @@
   }
 }
 
+@media only screen and ( max-width: 1230px ){
+  .contact-container .bottom-section .form-container .form-wrapper .form-group .upload-wrapper,
+  .contact-container .bottom-section .form-container .form-wrapper .form-group .submit-btn{
+    width: 115px;
+  }
+}
+
 @media only screen and ( max-width: 1215px ){
   .about-container .custom-section.mechanic-section{
     background-position: 180%;
@@ -85,6 +92,11 @@
 
   .reserve-container .micro-item .text-container .inner-container .inner-wrapper p{
     font-size:1.15em;
+  }
+
+  .contact-container .bottom-section .form-container .form-wrapper .form-group .upload-wrapper,
+  .contact-container .bottom-section .form-container .form-wrapper .form-group .submit-btn{
+    width: 150px;
   }
 }
 
@@ -376,6 +388,11 @@ and (-webkit-min-device-pixel-ratio: 1) {
   .header-about .header-title .text-container p{
     font-size: 1.15em;
   }
+
+  .contact-container .bottom-section .form-container .form-wrapper .form-group .upload-wrapper,
+  .contact-container .bottom-section .form-container .form-wrapper .form-group .submit-btn{
+    width: 49.3%;
+  }
 }
 
 @media ( max-width: 767px ) and (orientation: landscape){
@@ -455,5 +472,10 @@ and (-webkit-min-device-pixel-ratio: 1) {
   .contact-container .bottom-section .form-container .form-wrapper .form-group button{
     width: 100%;
     margin-bottom: 10px;
+  }
+
+  .contact-container .bottom-section .form-container .form-wrapper .form-group .upload-wrapper,
+  .contact-container .bottom-section .form-container .form-wrapper .form-group .submit-btn{
+    width: 48.3%;
   }
 }

@@ -1,0 +1,47 @@
+var map2;
+
+document.addEventListener('DOMContentLoaded', function () {
+    if (document.querySelectorAll('#map-canvas').length > 0)
+    {
+        var js_file = document.createElement('script');
+        js_file.type = 'text/javascript';
+        js_file.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyA55hEIdtEAkBilQHa9QO7k2OI2kYvU8ws&callback=initMap';
+        document.getElementsByTagName('head')[0].appendChild(js_file);
+    }
+});
+
+function initMap() {
+  var mapOptions = {
+      center: new google.maps.LatLng(46.598614,-70.852373),
+      zoom: 14,
+      scrollwheel: false,
+      disableDefaultUI: true,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+	map2 = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  var petrostclaireStyles = [{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"color":"#f6ebd8"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"labels.text.stroke","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#e0d6c5"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#575757"}]}];
+
+	map2.setOptions({ styles: petrostclaireStyles });
+
+	var image = new google.maps.MarkerImage(
+	    '<%= asset_path('map-marker.png') %>',
+	    new google.maps.Size(41, 62)
+	);
+
+	var marker1 = new google.maps.Marker({
+	    draggable: false,
+	    raiseOnDrag: false,
+	    map: map2,
+	    icon: image,
+	    position: map2.getCenter()
+	});
+
+	//Keep map centered on window resize
+  google.maps.event.addDomListener(window, 'resize', function() {
+      var center = map2.getCenter()
+      google.maps.event.trigger(map2, "resize")
+      map2.setCenter(center)
+  });
+}

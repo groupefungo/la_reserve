@@ -3,6 +3,9 @@ class ContactsController < ApplicationController
     @contact = Contact.new
   end
 
+  def index
+  end
+
   def create
     email_to = 'eric@entreprisesofarrell.com'
     subject = "Nouvelle candidature soumise"
