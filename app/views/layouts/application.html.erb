@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>La Réserve - <%= yield(:page_title) %></title>
-  <% #favicon_link_tag 'favicon.ico' %>
+  <%= favicon_link_tag 'favicon.ico' %>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -47,7 +47,7 @@
       <ul class="nav navbar-nav">
         <li class="hidden-lg hidden-md"><a href="/"><%=	t('master.top_menu.home').html_safe %></a></li>
         <li class="add-margin-right hidden-sm hidden-xs <%= params[:id] == 'a-propos' ? 'active-link' : '' %>"><a href="/a-propos/"><%=	t('master.top_menu.about').html_safe %> <span class="underline"></span></a></li>
-        <li class="add-margin-right hidden-sm hidden-xs"><a href="#"><%=	t('master.top_menu.products').html_safe %> <span class="underline"></span></a></li>
+        <li class="add-margin-right hidden-sm hidden-xs <%= params[:id] == 'produits' ? 'active-link' : '' %>"><a href="/produits/"><%=	t('master.top_menu.products').html_safe %> <span class="underline"></span></a></li>
         <li class="add-margin-right <%= params[:id] == 'la-reserve' ? 'active-link' : '' %>"><a href="/la-reserve/"><%=	t('master.top_menu.reserve').html_safe %> <span class="underline"></span></a></li>
         <li class="<%= params[:id] == 'contact' ? 'active-link' : '' %>"><a href="/contact/" class="tablet-remove-padding-right"><%=	t('master.top_menu.contact').html_safe %> <span class="underline"></span></a></li>
         <li class="hidden-lg hidden-md hidden-sm">

@@ -43,6 +43,10 @@
     display: block;
     margin-bottom: 8px;
   }
+
+  .products-bg section#breakfast, .products-bg section#beers, .products-bg section#cafe{
+    background-position: 30%;
+  }
 }
 
 @media only screen and ( max-width: 1260px ){
@@ -107,6 +111,22 @@
 
   .about-container .custom-section.mechanic-section{
     background-position: 215%;
+  }
+
+  .products-bg section#pizza .text-to-right, .products-bg section#wine .text-to-right{
+    width: 40%;
+  }
+
+  .products-bg section#wine, .products-bg section#pizza{
+    background-position: 30%;
+  }
+
+  .products-bg section#sandwich{
+    background-position: 75%;
+  }
+
+  .products-bg section.product-section .content-container .text-container {
+    padding: 25px;
   }
 }
 
@@ -176,6 +196,63 @@
 
   .about-container .custom-section .text-container{
     width: 100%;
+  }
+}
+
+@media only screen and ( max-width: 900px ){
+  .products-bg section.product-section .content-container.text-to-right,
+  .products-bg section.product-section .content-container.text-to-left,
+  .products-bg section.product-section .content-container.text-to-center{
+    width: 100% !important;
+    position: relative;
+
+    &:before{
+      display: none !important;
+    }
+  }
+
+  .products-bg section.product-section{
+    height: auto;
+  }
+
+  .products-bg section#muffin .text-to-right .tag{
+    display: none;
+  }
+
+  .products-bg section#sandwich .text-to-left{
+    background: #FFF !important;
+
+    .text-container{
+      color: #363636 !important;
+
+      h1{
+        border-color: #363636 !important;
+      }
+    }
+  }
+
+  .products-bg section#pizza .text-to-right{
+    background: #ed202a !important;
+
+    .text-container{
+      color: #FFF !important;
+
+      h1{
+        border-color: #FFF !important;
+      }
+    }
+  }
+
+  .products-bg section#wine .text-to-right{
+    background: #ed202a !important;
+
+    .text-container{
+      color: #FFF !important;
+
+      h1{
+        border-color: #FFF !important;
+      }
+    }
   }
 }
 
@@ -392,6 +469,14 @@ and (-webkit-min-device-pixel-ratio: 1) {
   .contact-container .bottom-section .form-container .form-wrapper .form-group .upload-wrapper,
   .contact-container .bottom-section .form-container .form-wrapper .form-group .submit-btn{
     width: 49.3%;
+  }
+
+  .products-bg section.product-section .content-container .text-container h1{
+    font-size: 1.55em;
+  }
+
+  .products-bg section.product-section .content-container .text-container h2{
+    font-size: 1.15em;
   }
 }
 

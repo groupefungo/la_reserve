@@ -71,6 +71,33 @@ fr:
         item_4: "Déverrouillage"
         item_5: "Entretien préventif de la saaq (programme PEP)"
         item_6: "Vérification en vue d'un achat"
+  products:
+    breakfast:
+      title: "MUFFIN DÉJEUNER"
+      subtitle: "(Jimmy&nbsp;Dean)"
+      text: "Matin pressé! On vous attend avec un délicieux sandwich&#8209;déjeuner à prendre sur le pouce. Le début d'une savoureuse et satisfaisante journée."
+    cafe:
+      title: "CAFÉ VAN HOUTTE"
+      subtitle: "NOUS AVONS UN CAFÉ À VOTRE GOÛT"
+      text: "Rien de mieux pour débuter la journée qu'un riche et savoureux café fait de grains d'arabica de qualité supérieure. Un café à l'arôme unique, 100% équitable."
+    muffin:
+      title: "MUFFINS"
+      subtitle: "MUFFINS FRAIS DU JOUR"
+      text: "Nous vous offrons un grand choix de muffins cuits sur place. Moelleux et savoureux, nos muffins accompagneront votre café à merveille."
+    sandwich:
+      title: "SANDWICH, WRAP, SOUS&#8209;MARIN"
+      subtitle: "(La Bouchée Double)"
+      text: "Délicieux et fraîchement préparés, nos savoureux sandwichs vous offrent un régal à chaque repas. Ils vous feront craquer à chaque bouchée."
+    pizza:
+      title: "Pizza"
+      subtitle: "PRÊT À MANGER"
+      text: "Venez goûter à notre délicieuse et généreuse pizza prête-à-manger. Elle saura combler votre fringale et satisfaire vos papilles."
+    beers:
+      title: "BIÈRE DE MICROBRASSERIE"
+      text: "La réserve. la référence pour sa grande variété de bières de microbrasserie.<br/><br/>Près de 40 microbrasseries à découvrir."
+    wines:
+      title: "VIN JULIA WINE ET VINS & CIE"
+      text: "C'est l'heure du 5 à 7, venez découvrir la vaste sélection de vins Julia Wine et Vin & cie.<br/><br/>Des vins de grande qualité, réputés, à prix inégalable."
   reserve:
     archibald_title: "Microbrasserie Archibald"
     archibald_text: "La microbrasserie Archibald utilise des procédés de fabrication qui s’inspirent des traditions ancestrales allemandes. Elle brasse également des bières de type belge auxquelles elle ajoute des épices, des écorces d'orange et des céréales crues. La microbrasserie propose 11 variétés de bière en plus de nombreuses bières&nbsp;saisonnières."

@@ -1,0 +1,102 @@
+<%= content_for :page_title, 'No produits' %>
+
+<div class="main-content products-bg">
+  <div class="products-container">
+    <div class="container-fluid fluid-container-limit">
+
+      <section id="breakfast" class="product-section">
+        <div class="content-container text-to-right red-bg">
+          <div class="text-container">
+            <h1><%=	t('products.breakfast.title').html_safe %> <span><%= t('products.breakfast.subtitle').html_safe %></span></h1>
+            <p><%=	t('products.breakfast.text').html_safe %></p>
+          </div>
+        </div>
+      </section>
+      <section id="cafe" class="product-section">
+        <div class="content-container text-to-center white-bg">
+          <div class="text-container">
+            <h1><%= t('products.cafe.title').html_safe %></h1>
+            <h2><%=	t('products.cafe.subtitle').html_safe %></h2>
+            <p><%= t('products.cafe.text').html_safe %></p>
+          </div>
+        </div>
+      </section>
+      <section id="muffin" class="product-section">
+        <div class="content-container text-to-right red-bg">
+          <%= image_tag 'muffin-tag', alt: 'tag', class: 'tag' %>
+          <div class="text-container">
+            <h1><%= t('products.muffin.title').html_safe %></h1>
+            <h2><%=	t('products.muffin.subtitle').html_safe %></h2>
+            <p><%= t('products.muffin.text').html_safe %></p>
+          </div>
+        </div>
+      </section>
+      <section id="sandwich" class="product-section">
+        <div class="content-container text-to-left red-bg">
+          <div class="text-container">
+            <h1><%=	t('products.sandwich.title').html_safe %></h1>
+            <p><%=	t('products.sandwich.text').html_safe %></p>
+          </div>
+        </div>
+      </section>
+      <section id="pizza" class="product-section">
+        <div class="content-container text-to-right white-bg">
+          <div class="text-container">
+            <h1><%= t('products.pizza.title').html_safe %></h1>
+            <h2><%=	t('products.pizza.subtitle').html_safe %></h2>
+            <p><%= t('products.pizza.text').html_safe %></p>
+          </div>
+        </div>
+      </section>
+      <section id="beers" class="product-section">
+        <div class="content-container text-to-center white-bg">
+          <div class="text-container">
+            <h1><%= t('products.beers.title').html_safe %></h1>
+            <p><%= t('products.beers.text').html_safe %></p>
+          </div>
+        </div>
+      </section>
+      <section id="wine" class="product-section">
+        <div class="content-container text-to-right white-bg">
+          <div class="text-container">
+            <h1><%= t('products.wines.title').html_safe %></h1>
+            <p><%= t('products.wines.text').html_safe %></p>
+          </div>
+        </div>
+      </section>
+
+      <!--&lt;!&ndash;SECTION DEJEUNER&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+      <!--<div class="product-section breakfast-section">-->
+        <!--< image_tag 'products-section-breakfast', alt: 'Dejeuner', class: 'product-bg' %>-->
+        <!--<div class="right-container content-container red-bg">-->
+          <!--<div class="wrapper">-->
+            <!--<div class="inner">-->
+              <!--<div class="text-container">-->
+                <!--<h1><	t('products.breakfast.title') %> <span><	t('products.breakfast.subtitle').html_safe %></span></h1>-->
+                <!--<p><	t('products.breakfast.text') %></p>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+
+      <!--&lt;!&ndash;SECTION CAFE&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+      <!--<div class="product-section cafe-section">-->
+        <!--< image_tag 'products-section-cafe', alt: 'Cafe', class: 'cafe-bg-1' %>-->
+        <!--< image_tag 'products-section-cafe-2', alt: 'Bonbons', class: 'cafe-bg-2' %>-->
+        <!--<div class="center-container white-bg">-->
+          <!--<div class="wrapper">-->
+            <!--<div class="inner">-->
+              <!--<div class="text-container">-->
+                <!--<h1>< t('products.cafe.title') %></h1>-->
+                <!--<h2><	t('products.cafe.subtitle').html_safe %></h2>-->
+                <!--<p><	t('products.cafe.text') %></p>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+
+    </div>
+  </div>
+</div>
