@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require jquery.turbolinks
 //= require jquery.validate
 //= require jquery.validate.additional-methods
 //= require bootstrap-sprockets
@@ -20,6 +20,7 @@
 //= require slick.min
 //= require gs/TweenMax.min
 //= require jquery.remotipart
+//= require gmap
 //= require contact_form
-//= require gmap.js.erb
 //= require main
+//= require turbolinks
