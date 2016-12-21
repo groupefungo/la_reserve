@@ -1,0 +1,54 @@
+.devise-forms-container{
+  background: #f6ebd8;
+
+  .form-container{
+    padding: 50px;
+
+    h2{
+      font-family: $TradeGothicBold;
+      font-size: 2.55em;
+      padding-bottom: 10px;
+      text-transform: uppercase;
+      color: #ed202a;
+    }
+
+    form{
+      .form-inputs{
+        label{
+          display: block;
+          text-transform: uppercase;
+        }
+
+        input{
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 15px;
+        }
+
+        input[type=checkbox]{
+          margin-left: 0px;
+        }
+
+        .user_remember_me{
+          label.checkbox{
+            span{
+              margin-left: 25px;
+            }
+          }
+        }
+      }
+
+      .form-actions{
+        input[type=submit]{
+          background: #363636;
+          color: #FFF;
+          margin-bottom: 15px;
+
+          &:hover{
+            background: lighten(#363636, 10%);
+          }
+        }
+      }
+    }
+  }
+}

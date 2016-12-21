@@ -43,6 +43,7 @@ GEM
     arel (6.0.3)
     autoprefixer-rails (6.3.6.1)
       execjs
+    bcrypt (3.1.10)
     better_errors (2.1.1)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
@@ -117,6 +118,13 @@ GEM
     cucumber-wire (0.0.1)
     database_cleaner (1.5.1)
     debug_inspector (0.0.2)
+    devise (3.5.6)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      responders
+      thread_safe (~> 0.1)
+      warden (~> 1.2.3)
     diff-lcs (1.2.5)
     docile (1.1.5)
     email_spec (2.0.0)
@@ -193,6 +201,7 @@ GEM
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
     normalize-rails (4.1.1)
+    orm_adapter (0.5.0)
     paperclip (4.3.6)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
@@ -256,6 +265,8 @@ GEM
     rdoc (4.2.2)
       json (~> 1.4)
     remotipart (1.2.1)
+    responders (2.1.1)
+      railties (>= 4.2.0, < 5.1)
     rspec-activemodel-mocks (1.0.3)
       activemodel (>= 3.0)
       activesupport (>= 3.0)
@@ -324,6 +335,8 @@ GEM
       tzinfo (>= 1.0.0)
     uglifier (3.0.0)
       execjs (>= 0.3.0, < 3)
+    warden (1.2.6)
+      rack (>= 1.0)
     web-console (2.3.0)
       activemodel (>= 4.0)
       binding_of_caller (>= 0.7.2)
@@ -358,6 +371,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   cucumber-rails
   database_cleaner
+  devise
   email_spec
   fabrication
   friendly_id

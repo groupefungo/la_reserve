@@ -21,6 +21,7 @@ gem 'sprockets-rails'
 gem 'high_voltage', '~> 2.4.0'
 gem 'rails_admin'
 gem 'rails_admin-i18n'
+gem 'devise'
 gem "paperclip", "~> 4.3"
 gem 'friendly_id'
 gem "autoprefixer-rails"
