@@ -86,7 +86,7 @@ Rails.application.configure do
   config.middleware.use ExceptionNotification::Rack,
                         :email => {
                             :email_prefix => "[ERROR] ",
-                            :sender_address => %{"Petro Canada notifier" <notifier@plancherbfc.com>},
+                            :sender_address => %{"Petro Canada notifier" <notifier@lareserve.com>},
                             :exception_recipients => %w{rgagnon@fungo.ca dominic@ateliermade.ca}
                         }
 end
