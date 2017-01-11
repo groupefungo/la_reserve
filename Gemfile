@@ -25,6 +25,8 @@ gem 'devise'
 gem "paperclip", "~> 4.3"
 gem 'friendly_id'
 gem "autoprefixer-rails"
+gem 'exception_notification'
+
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
