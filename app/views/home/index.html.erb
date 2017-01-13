@@ -13,25 +13,17 @@
                 <div class="row">
                   <div class="col-lg-12">
                     <div class="header-title">
-                      <div class="text-container">
+                      <a href="/la-reserve/" class="text-container">
                         <%= image_tag 'reserve-logo', alt: '' %>
                         <h1 class="hidden-sm hidden-xs"><%=	t('homepage.slider_caption_1').html_safe  %></h1>
                         <h1 class="hidden-lg hidden-md"><%=	t('homepage.slider_caption_mobile_1').html_safe  %></h1>
-                      </div>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </li>
-          <!--<li class="sy-slide fade useCSS" style="transition-duration: 800ms; opacity: 0;">-->
-            <!--<img src="http://placehold.it/1920x682" class="hidden-xs">-->
-            <!--< image_tag 'mobile-slide-1-copy', alt: '', class: 'hidden-lg hidden-md hidden-sm' %>-->
-          <!--</li>-->
-          <!--<li class="sy-slide fade useCSS" style="transition-duration: 800ms; opacity: 0;">-->
-            <!--< image_tag 'slide3', alt: '', class:'hidden-xs' %>-->
-            <!--< image_tag 'mobile-slide-1-copy', alt: '', class: 'hidden-lg hidden-md hidden-sm' %>-->
-          <!--</li>-->
         </ul>
       </div>
       <div class="sy-filler ready"></div>
@@ -132,7 +124,7 @@
       <div class="home-slide">
         <div class="inner-slide">
           <div class="slide-wrapper">
-            <%= image_tag 'beer-promo', alt: 'promo-biere' %>
+            <a href="/la-reserve/"><%= image_tag 'beer-promo', alt: 'promo-biere' %></a>
           </div>
         </div>
         <div class="caption-container">
@@ -142,7 +134,7 @@
       <div class="home-slide">
         <div class="inner-slide">
           <div class="slide-wrapper">
-            <%= image_tag 'mecanique-promo', alt: 'promo-mecanique' %>
+            <a href="/a-propos#mecanique"><%= image_tag 'mecanique-promo', alt: 'promo-mecanique' %></a>
           </div>
         </div>
         <div class="caption-container">
@@ -152,7 +144,7 @@
       <div class="home-slide">
         <div class="inner-slide">
           <div class="slide-wrapper">
-            <%= image_tag 'carte-ppoint-promo', alt: 'promo-petro-point' %>
+            <a href="/a-propos#petro-points"><%= image_tag 'carte-ppoint-promo', alt: 'promo-petro-point' %></a>
           </div>
         </div>
         <div class="caption-container">
@@ -162,7 +154,7 @@
       <div class="home-slide">
         <div class="inner-slide">
           <div class="slide-wrapper">
-            <%= image_tag 'product-promo', alt: 'promo-products' %>
+            <a href="/produits#vins"><%= image_tag 'product-promo', alt: 'promo-products' %></a>
           </div>
         </div>
         <div class="caption-container">

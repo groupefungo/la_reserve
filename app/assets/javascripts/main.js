@@ -98,6 +98,18 @@ var ready = function(){
         });
     }
 
+    //Pages scrollto function if hash present in URL
+    if($('.about-container,.products-container').length > 0){
+        var param = window.location.hash;
+        if(param != "" && param != null){
+            $(document).off("scroll");
+            $target = $(param);
+            $('html, body').stop().animate({
+                'scrollTop': ($target.offset().top)
+            }, 500, 'swing');
+        }
+    }
+
     //Contact form custom validation
     if($('.form-container').length > 0){
         var fname = $('#contact_form_firstname');

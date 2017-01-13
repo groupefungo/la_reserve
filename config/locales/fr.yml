@@ -13,7 +13,7 @@ fr:
       header_title: "Disponible <span>ici</span>"
       caption_1: "Bières de microbrasserie"
       caption_2: "Services de mécanique"
-      caption_3: "Petro Points"
+      caption_3: "Petro-Points"
       caption_4: "Vins"
   about:
     header_title: "avec vous et pour vous ...depuis 1958"
@@ -96,7 +96,7 @@ fr:
       title: "BIÈRE DE MICROBRASSERIE"
       text: "La réserve. la référence pour sa grande variété de bières de microbrasserie.<br/><br/>Près de 40 microbrasseries à découvrir."
     wines:
-      title: "VIN JULIA WINE ET VINS & CIE"
+      title: "VIN JULIA WINE ET<br/>VINS & CIE"
       text: "C'est l'heure du 5 à 7, venez découvrir la vaste sélection de vins Julia Wine et Vin & cie.<br/><br/>Des vins de grande qualité, réputés, à prix inégalable."
   reserve:
     archibald_title: "Microbrasserie Archibald"

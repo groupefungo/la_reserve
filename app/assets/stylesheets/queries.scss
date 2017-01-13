@@ -44,7 +44,7 @@
     margin-bottom: 8px;
   }
 
-  .products-bg section#breakfast, .products-bg section#beers, .products-bg section#cafe{
+  .products-bg section#dejeuner, .products-bg section#bieres, .products-bg section#cafe{
     background-position: 30%;
   }
 }
@@ -113,11 +113,11 @@
     background-position: 215%;
   }
 
-  .products-bg section#pizza .text-to-right, .products-bg section#wine .text-to-right{
+  .products-bg section#pizza .text-to-right, .products-bg section#vins .text-to-right{
     width: 40%;
   }
 
-  .products-bg section#wine, .products-bg section#pizza{
+  .products-bg section#vins, .products-bg section#pizza{
     background-position: 30%;
   }
 
@@ -243,7 +243,7 @@
     }
   }
 
-  .products-bg section#wine .text-to-right{
+  .products-bg section#vins .text-to-right{
     background: #ed202a !important;
 
     .text-container{
