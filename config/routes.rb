@@ -9,5 +9,10 @@ Rails.application.routes.draw do
 
   resources :contacts
 
+  resources :breweries do
+    get :sort, on: :collection
+    collection {post :sort}
+  end
+
   get "/" => "home#index"
 end

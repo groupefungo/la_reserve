@@ -1,0 +1,20 @@
+<div class="sort-breweries-container">
+  <div class="sort-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1>Classer les microbrasseries</h1>
+          <ul id="breweries" data-update-url="<%= sort_breweries_url %>">
+            <% @breweries.each do |brewery| %>
+                <%= content_tag_for :li, brewery, :class => "brewery-item" do %>
+                    <span class="index-number">[<%= brewery.order %>]</span>
+                    <span class="brewery-name"><%= brewery.name.html_safe %></span>
+                    <i class="glyphicon glyphicon-menu-hamburger"></i>
+                <% end %>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery-ui
 //= require jquery_ujs
 //= require jquery.turbolinks
 //= require jquery.validate
@@ -22,5 +23,6 @@
 //= require jquery.remotipart
 //= require gmap
 //= require contact_form
+//= require sort
 //= require main
 //= require turbolinks
