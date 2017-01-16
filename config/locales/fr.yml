@@ -111,7 +111,7 @@ fr:
       subtitle_1: "LUNDI au vendredi"
       text_1: "5h15 à 23h"
       subtitle_2: "samedi et dimanche"
-      text_2: "6h à Minuit"
+      text_2: "6h à 23h"
     form:
       title: "Postulez pour un emploi"
       curriculum_btn: "Joindre CV"
