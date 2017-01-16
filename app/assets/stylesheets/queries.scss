@@ -364,8 +364,12 @@ and (-webkit-min-device-pixel-ratio: 1) {
     font-size: 1.5em;
   }
 
-  .home-promo-slider .slick-next, .home-promo-slider .slick-prev{
-    display: none !important;
+  .home-promo-slider .slick-next{
+    right: -25px;
+  }
+
+  .home-promo-slider .slick-prev{
+    left: -25px;
   }
 
   .home-promo-container{
