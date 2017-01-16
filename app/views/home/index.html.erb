@@ -13,11 +13,11 @@
                 <div class="row">
                   <div class="col-lg-12">
                     <div class="header-title">
-                      <a href="/la-reserve/" class="text-container">
-                        <%= image_tag 'reserve-logo', alt: '' %>
-                        <h1 class="hidden-sm hidden-xs"><%=	t('homepage.slider_caption_1').html_safe  %></h1>
-                        <h1 class="hidden-lg hidden-md"><%=	t('homepage.slider_caption_mobile_1').html_safe  %></h1>
-                      </a>
+                      <%= link_to breweries_path, data: { no_turbolink: true }, class: 'text-container' do %>
+                          <%= image_tag 'reserve-logo', alt: '' %>
+                          <h1 class="hidden-sm hidden-xs"><%=	t('homepage.slider_caption_1').html_safe  %></h1>
+                          <h1 class="hidden-lg hidden-md"><%=	t('homepage.slider_caption_mobile_1').html_safe  %></h1>
+                      <% end %>
                     </div>
                   </div>
                 </div>
@@ -110,7 +110,6 @@
     </div>
   </div>
 
-
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -124,7 +123,9 @@
       <div class="home-slide">
         <div class="inner-slide">
           <div class="slide-wrapper">
-            <a href="/la-reserve/"><%= image_tag 'beer-promo', alt: 'promo-biere' %></a>
+            <%= link_to breweries_path, data: { no_turbolink: true } do %>
+                <%= image_tag 'beer-promo', alt: 'promo-biere' %>
+            <% end %>
           </div>
         </div>
         <div class="caption-container">

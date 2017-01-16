@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   resources :contacts
 
-  resources :breweries do
+  resources :breweries, path: 'la-reserve/' do
     get :sort, on: :collection
     collection {post :sort}
   end

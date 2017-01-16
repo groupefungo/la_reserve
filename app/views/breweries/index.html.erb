@@ -1,0 +1,49 @@
+<%= content_for :page_title, 'La Réserve' %>
+
+<section id="page_header" class="reserve-header">
+  <%= image_tag 'reserve-header', alt: 'la reserve', class: 'mobile-landscape-header header-img' %>
+  <%= image_tag 'mobile-reserve-header', alt: 'la reserve', class: 'mobile-potrait-header  header-img' %>
+
+  <div class="inner-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="header-title">
+            <div class="text-container">
+              <%= image_tag 'reserve-page-logo', alt: 'la réserve', class: 'reserve-logo' %>
+              <h1>
+                Le nouvel espace microbrasserie<br/>de Petro-Canada
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="reserve-container">
+  <div class="container-fluid full-width-container">
+    <% @breweries.each do |brewery| %>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 remove-padding">
+          <div class="micro-item">
+            <div class="content-wrapper">
+              <div class="inner-wrapper">
+                <div class="wrapper">
+                  <%= image_tag brewery.image.url, alt: brewery.name, class: 'logo-img' %>
+                  <div class="text-container">
+                    <h3><%= brewery.name.html_safe %></h3>
+                    <p><%= brewery.description.html_safe %></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <% end %>
+  </div>
+</div>
+
+<!--TODO-->
+<!--SUPPRIMER PAGE LA-RESERVE.HTML.ERB-->
+<!--FAIRE EN SORTE QUE L'URL SORT SOIT ACCESSIBLE SEULEMENT SI UN ADMIN EST CONNECTÉ-->

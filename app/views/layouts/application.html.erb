@@ -48,7 +48,11 @@
         <li class="hidden-lg hidden-md"><a href="/"><%=	t('master.top_menu.home').html_safe %></a></li>
         <li class="add-margin-right hidden-sm hidden-xs <%= params[:id] == 'a-propos' ? 'active-link' : '' %>"><a href="/a-propos/" data-no-turbolink><%=	t('master.top_menu.about').html_safe %> <span class="underline"></span></a></li>
         <li class="add-margin-right hidden-sm hidden-xs <%= params[:id] == 'produits' ? 'active-link' : '' %>"><a href="/produits/" data-no-turbolink><%=	t('master.top_menu.products').html_safe %> <span class="underline"></span></a></li>
-        <li class="add-margin-right <%= params[:id] == 'la-reserve' ? 'active-link' : '' %>"><a href="/la-reserve/" data-no-turbolink><%=	t('master.top_menu.reserve').html_safe %> <span class="underline"></span></a></li>
+        <li class="add-margin-right <%= params[:id] == 'la-reserve' ? 'active-link' : '' %>">
+          <%= link_to breweries_path, data: { no_turbolink: true } do %>
+              <%= t('master.top_menu.reserve').html_safe %> <span class="underline"></span>
+          <% end %>
+        </li>
         <li class="<%= params[:id] == 'contact' ? 'active-link' : '' %>"><a href="/contact/" class="tablet-remove-padding-right" data-no-turbolink><%=	t('master.top_menu.contact').html_safe %> <span class="underline"></span></a></li>
         <li class="hidden-lg hidden-md hidden-sm">
           <a href="https://www.facebook.com/petrocanadasteclaire/?fref=ts" target="_blank"><%= image_tag 'facebook-footer-icon', alt: 'Facebook', class: 'mobile-facebook' %></a>
@@ -75,7 +79,7 @@
             </ul>
             <ul>
               <li class="hidden-lg hidden-md hidden-sm"><a href="/"><%=	t('master.top_menu.home').html_safe %></a></li>
-              <li><a href="/la-reserve/" data-no-turbolink><%=	t('master.top_menu.reserve').html_safe %></a></li>
+              <li><%= link_to t('master.top_menu.reserve').html_safe, breweries_path, data: { no_turbolink: true } %></li>
               <li><a href="/contact/" data-no-turbolink><%=	t('master.top_menu.contact').html_safe %></a></li>
             </ul>
           </div>
