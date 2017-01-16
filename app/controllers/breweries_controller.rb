@@ -1,4 +1,5 @@
 class BreweriesController < ApplicationController
+  before_action :authenticate_user!, only: [:sort]
   before_action :load_breweries, only: [:index,:sort]
 
   def sort

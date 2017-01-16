@@ -1,6 +1,8 @@
 .reserve-header {
   .inner-container {
     .container {
+      position: relative;
+
       .row {
         .col-lg-12 {
           .header-title {
@@ -21,6 +23,20 @@
           }
         }
       }
+    }
+  }
+
+  .sort-brewery-link{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #FFF;
+    color: #333333;
+    padding: 15px;
+    text-decoration: none;
+
+    &:hover{
+      background: darken(#FFF, 25%);
     }
   }
 }

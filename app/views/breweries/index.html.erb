@@ -1,4 +1,4 @@
-<%= content_for :page_title, 'La Réserve' %>
+<%= content_for :page_title, 'Microbrasseries' %>
 
 <section id="page_header" class="reserve-header">
   <%= image_tag 'reserve-header', alt: 'la reserve', class: 'mobile-landscape-header header-img' %>
@@ -18,6 +18,10 @@
           </div>
         </div>
       </div>
+
+      <% if user_signed_in? %>
+          <%= link_to t('reserve.sort_breweries'), sort_breweries_path, class: 'sort-brewery-link' %>
+      <% end %>
     </div>
   </div>
 </section>
@@ -43,7 +47,3 @@
     <% end %>
   </div>
 </div>
-
-<!--TODO-->
-<!--SUPPRIMER PAGE LA-RESERVE.HTML.ERB-->
-<!--FAIRE EN SORTE QUE L'URL SORT SOIT ACCESSIBLE SEULEMENT SI UN ADMIN EST CONNECTÉ-->
