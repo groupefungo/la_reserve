@@ -329,6 +329,18 @@
         color: #363636;
       }
     }
+
+    a{
+      outline: none;
+
+      &:focus{
+        outline: none;
+      }
+
+      &:active{
+        outline: none;
+      }
+    }
   }
 
   .slick-prev{

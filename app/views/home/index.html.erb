@@ -13,10 +13,10 @@
                 <div class="row">
                   <div class="col-lg-12">
                     <div class="header-title">
-                      <%= link_to breweries_path, data: { no_turbolink: true }, class: 'text-container' do %>
+                      <%= link_to breweries_path, data: {no_turbolink: true}, class: 'text-container' do %>
                           <%= image_tag 'reserve-logo', alt: '' %>
-                          <h1 class="hidden-sm hidden-xs"><%=	t('homepage.slider_caption_1').html_safe  %></h1>
-                          <h1 class="hidden-lg hidden-md"><%=	t('homepage.slider_caption_mobile_1').html_safe  %></h1>
+                          <h1 class="hidden-sm hidden-xs"><%= t('homepage.slider_caption_1').html_safe %></h1>
+                          <h1 class="hidden-lg hidden-md"><%= t('homepage.slider_caption_mobile_1').html_safe %></h1>
                       <% end %>
                     </div>
                   </div>
@@ -35,77 +35,77 @@
   <div class="home-promo-container">
     <div class="container-fluid">
       <% if !@promo_one.blank? %>
-        <div class="row">
-          <div class="col-md-5 col-lg-5 price-desc-container content-container">
-            <div class="inner-wrapper">
-              <div class="text-container">
-                <h2><%=	@promo_one.title %></h2>
-                <h3><%=	@promo_one.price %><sup><%=	@promo_one.cents %>$</sup></h3>
-                <p><%=	@promo_one.description.html_safe  %></p>
-                <% unless	@promo_one.description_more.blank? %>
-                  <p><%=	@promo_one.description_more.html_safe  %></p>
-                <% end %>
+          <div class="row">
+            <div class="col-md-5 col-lg-5 price-desc-container content-container">
+              <div class="inner-wrapper">
+                <div class="text-container">
+                  <h2><%= @promo_one.title %></h2>
+                  <h3><%= @promo_one.price %><sup><%= @promo_one.cents %>$</sup></h3>
+                  <p><%= @promo_one.description.html_safe %></p>
+                  <% unless @promo_one.description_more.blank? %>
+                      <p><%= @promo_one.description_more.html_safe %></p>
+                  <% end %>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-7 col-lg-7 img-promo-container content-container">
-            <div class="inner-wrapper">
-              <div class="img-container">
-                <%= image_tag @promo_one.image.url , alt: @promo_one.title %>
+            <div class="col-md-7 col-lg-7 img-promo-container content-container">
+              <div class="inner-wrapper">
+                <div class="img-container">
+                  <%= image_tag @promo_one.image.url, alt: @promo_one.title %>
 
-                <% unless	@promo_one.petro_point.blank? %>
-                  <div class="petro-point-wrapper hidden-xs hidden-sm">
-                    <%= image_tag 'petro-point-icon' , alt: 'Petro Point', class: 'petro-point-icon' %>
-                    <span class="center-points-text">
-                      <%=	 @promo_one.petro_point %>
+                  <% unless @promo_one.petro_point.blank? %>
+                      <div class="petro-point-wrapper hidden-xs hidden-sm">
+                        <%= image_tag 'petro-point-icon', alt: 'Petro Point', class: 'petro-point-icon' %>
+                        <span class="center-points-text">
+                      <%= @promo_one.petro_point %>
                     </span>
-                  </div>
+                      </div>
 
-                    <div class="mobile-petro-points-wrapper hidden-lg hidden-md">
-                      <h3>Accumulez <%=	 @promo_one.petro_point %> Petro-points</h3>
-                    </div>
-                <% end %>
+                      <div class="mobile-petro-points-wrapper hidden-lg hidden-md">
+                        <h3>Accumulez <%= @promo_one.petro_point %> Petro-points</h3>
+                      </div>
+                  <% end %>
+                </div>
               </div>
             </div>
           </div>
-      </div>
       <% end %>
 
       <% if !@promo_two.blank? %>
-        <div class="row push-down-mobile">
-          <div class="col-md-5 col-lg-5 col-md-push-7 col-lg-push-7 price-desc-container content-container">
-            <div class="inner-wrapper">
-              <div class="text-container">
-                <h2><%=	@promo_two.title %></h2>
-                <h3><%=	@promo_two.price %><sup><%=	@promo_two.cents %>$</sup></h3>
-                <p><%=	@promo_two.description.html_safe  %></p>
-                <% unless	@promo_two.description_more.blank? %>
-                    <p><%=  @promo_two.description_more.html_safe  %></p>
-                <% end %>
+          <div class="row push-down-mobile">
+            <div class="col-md-5 col-lg-5 col-md-push-7 col-lg-push-7 price-desc-container content-container">
+              <div class="inner-wrapper">
+                <div class="text-container">
+                  <h2><%= @promo_two.title %></h2>
+                  <h3><%= @promo_two.price %><sup><%= @promo_two.cents %>$</sup></h3>
+                  <p><%= @promo_two.description.html_safe %></p>
+                  <% unless @promo_two.description_more.blank? %>
+                      <p><%= @promo_two.description_more.html_safe %></p>
+                  <% end %>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-7 col-lg-7 col-md-pull-5 col-lg-pull-5 img-promo-container bg-promo-row-2 content-container">
-            <div class="inner-wrapper">
-              <div class="img-container">
-                <%= image_tag @promo_two.image.url , alt: @promo_two.title %>
+            <div class="col-md-7 col-lg-7 col-md-pull-5 col-lg-pull-5 img-promo-container bg-promo-row-2 content-container">
+              <div class="inner-wrapper">
+                <div class="img-container">
+                  <%= image_tag @promo_two.image.url, alt: @promo_two.title %>
 
-                <% unless	@promo_two.petro_point.blank? %>
-                    <div class="petro-point-wrapper hidden-xs hidden-sm">
-                      <%= image_tag 'petro-point-icon' , alt: 'Petro Point', class: 'petro-point-icon' %>
-                      <span class="center-points-text">
-                      <%=	 @promo_two.petro_point %>
+                  <% unless @promo_two.petro_point.blank? %>
+                      <div class="petro-point-wrapper hidden-xs hidden-sm">
+                        <%= image_tag 'petro-point-icon', alt: 'Petro Point', class: 'petro-point-icon' %>
+                        <span class="center-points-text">
+                      <%= @promo_two.petro_point %>
                     </span>
-                    </div>
+                      </div>
 
-                    <div class="mobile-petro-points-wrapper hidden-lg hidden-md">
-                      <h3>Accumulez <%=	 @promo_two.petro_point %> Petro-points</h3>
-                    </div>
-                <% end %>
+                      <div class="mobile-petro-points-wrapper hidden-lg hidden-md">
+                        <h3>Accumulez <%= @promo_two.petro_point %> Petro-points</h3>
+                      </div>
+                  <% end %>
+                </div>
               </div>
             </div>
           </div>
-        </div>
       <% end %>
     </div>
   </div>
@@ -113,7 +113,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <h2 class="promo-title"><%=	t('homepage.promotions.header_title').html_safe  %></h2>
+        <h2 class="promo-title"><%= t('homepage.promotions.header_title').html_safe %></h2>
       </div>
     </div>
   </div>
@@ -121,53 +121,59 @@
   <div class="container-fluid">
     <div class="home-promo-slider">
       <div class="home-slide">
-        <div class="inner-slide">
-          <div class="slide-wrapper">
-            <%= link_to breweries_path, data: { no_turbolink: true } do %>
+        <%= link_to breweries_path, data: {no_turbolink: true} do %>
+            <div class="inner-slide">
+              <div class="slide-wrapper">
                 <%= image_tag 'beer-promo', alt: 'promo-biere' %>
-            <% end %>
-          </div>
-        </div>
-        <div class="caption-container">
-          <h4><%=	t('homepage.promotions.caption_1').html_safe  %></h4>
-        </div>
+              </div>
+            </div>
+            <div class="caption-container">
+              <h4><%= t('homepage.promotions.caption_1').html_safe %></h4>
+            </div>
+        <% end %>
       </div>
       <div class="home-slide">
-        <div class="inner-slide">
-          <div class="slide-wrapper">
-            <a href="/a-propos#mecanique"><%= image_tag 'mecanique-promo', alt: 'promo-mecanique' %></a>
+        <a href="/a-propos#mecanique">
+          <div class="inner-slide">
+            <div class="slide-wrapper">
+              <%= image_tag 'mecanique-promo', alt: 'promo-mecanique' %>
+            </div>
           </div>
-        </div>
-        <div class="caption-container">
-          <h4><%=	t('homepage.promotions.caption_2').html_safe  %></h4>
-        </div>
+          <div class="caption-container">
+            <h4><%= t('homepage.promotions.caption_2').html_safe %></h4>
+          </div>
+        </a>
       </div>
       <div class="home-slide">
-        <div class="inner-slide">
-          <div class="slide-wrapper">
-            <a href="/a-propos#petro-points"><%= image_tag 'carte-ppoint-promo', alt: 'promo-petro-point' %></a>
+        <a href="/a-propos#petro-points">
+          <div class="inner-slide">
+            <div class="slide-wrapper">
+              <%= image_tag 'carte-ppoint-promo', alt: 'promo-petro-point' %>
+            </div>
           </div>
-        </div>
-        <div class="caption-container">
-          <h4><%=	t('homepage.promotions.caption_3').html_safe  %></h4>
-        </div>
+          <div class="caption-container">
+            <h4><%= t('homepage.promotions.caption_3').html_safe %></h4>
+          </div>
+        </a>
       </div>
       <div class="home-slide">
-        <div class="inner-slide">
-          <div class="slide-wrapper">
-            <a href="/produits#vins"><%= image_tag 'product-promo', alt: 'promo-products' %></a>
+        <a href="/produits#vins">
+          <div class="inner-slide">
+            <div class="slide-wrapper">
+              <%= image_tag 'product-promo', alt: 'promo-products' %>
+            </div>
           </div>
-        </div>
-        <div class="caption-container">
-          <h4><%=	t('homepage.promotions.caption_4').html_safe  %></h4>
-        </div>
+          <div class="caption-container">
+            <h4><%= t('homepage.promotions.caption_4').html_safe %></h4>
+          </div>
+        </a>
       </div>
     </div>
   </div>
 </div>
 
 <script type="text/javascript">
-    $(function(){
+    $(function () {
         $('.home-promo-slider').slick({
             dots: false,
             arrows: true,
