@@ -23,7 +23,7 @@ fr:
       subtext: "Fondées en 1958 par René et Lilia O’Farrell, Les Entreprises René O’Farrell  n’ont jamais cessé d’innover afin d’offrir à sa clientèle le meilleur service qui soit.<br><br>
       Ayant débuté avec un simple petit poste d'essence avec service de lubrification, l'entreprise n'a pas tardé à se développer et à devenir une référence dans la région en matière de service et de réparation automobile. Après de multiples agrandissements, c'est en juillet 2000 que les Entreprises René O'Farrell ont fait l'acquisition d'un dépanneur en face de leur place d'affaires pour y transférer leur service de vente d'essence.<br><br>
       En 2002, les frères Étienne et Éric O'Farrell assurent la relève de leurs parents en achetant l'entreprise afin d'y poursuivre la tradition familiale.<br><br>
-      En 2014, les frères décident de faire peau neuve. Tout en conservant l'emplacement initial, ils effectuent des travaux majeurs leur permettant aujourd'hui de vous offrir un dépanneur moderne et spacieux offrant de multiples commodités."
+      En 2014, les frères décident de faire peau neuve. Ils effectuent la construction d’un nouveau bâtiment de 4 200 pieds carré sur le terrain adjacent à celui de l'emplacement initial. Ces travaux d'envergure leur permettent aujourd'hui de vous offrir un dépanneur moderne et spacieux offrant de multiples commodités."
     petro_points:
       title: "petro-points"
       subtext_1: "Obtenez des points sur vos achats et échangez-les contre de l'essence et d'autres primes grâce au programme Petro-Points.<br/><br/>
@@ -71,6 +71,7 @@ fr:
         item_4: "Déverrouillage"
         item_5: "Entretien préventif de la saaq (programme PEP)"
         item_6: "Vérification en vue d'un achat"
+        item_7: "Entretien de VR, roulottes et remorques"
   products:
     breakfast:
       title: "MUFFIN DÉJEUNER"
@@ -124,13 +125,13 @@ fr:
       fax: "<b>F</b> 418 883-2355"
     mechanic_open_hours:
       title: "Heures d'ouvertures"
-      monday: "LUNDI <p>7h30 à 17h00</p>"
-      tuesday: "Mardi <p>7h30 à 17h00</p>"
-      wednesday: "Mecredi <p>7h30 à 17h00</p>"
-      thursday: "Jeudi <p>7h30 à 17h00</p>"
-      friday: "Vendredi <p>7h30 à 17h00</p>"
-      saturday: "Samedi <p>7h30 à 17h00</p>"
-      subtext: "Ouvert le samedi pour la période des<br/>pneus au printemps et à l’automne"
+      monday: "LUNDI <p>7h30 à 21h</p>"
+      tuesday: "Mardi <p>7h30 à 21h</p>"
+      wednesday: "Mecredi <p>7h30 à 21h</p>"
+      thursday: "Jeudi <p>7h30 à 21h</p>"
+      friday: "Vendredi <p>7h30 à 17h</p>"
+      saturday: "Samedi <p>Fermé</p>"
+      subtext: "Ouvert le samedi pour la période des<br/>pneus 7h30 à 12h00"
   footer:
     menu_links_text: "Liens<br/>rapides"
     social_media_text: "Suivez-<br/>nous"

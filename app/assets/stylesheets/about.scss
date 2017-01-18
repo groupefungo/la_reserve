@@ -139,6 +139,15 @@
     &.mechanic-section{
       background-image:image-url('about-mechanic-section.jpg');
       background-position: 120%;
+
+      .text-container{
+        .auto-select-logo{
+          img{
+            position: relative;
+            left: -15px;
+          }
+        }
+      }
     }
 
     .text-to-right{
