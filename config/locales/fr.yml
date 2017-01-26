@@ -45,7 +45,7 @@ fr:
       u_list_item_6: "Carte d'appel et carte-cadeau"
     mechanic:
       title: "Atelier de mécanique"
-      subtitle_1: "Les pneus. ce qui vous garde sur la route."
+      subtitle_1: "Les pneus, ce qui vous garde sur la route."
       subtext_1: "Nous connaissons l'importance d'avoir de bons pneus et nous souhaitons nous assurer que vous roulerez en toute sécurité. Notre équipe d'experts vous aidera à faire le bon choix en matière de pneus tout en respectant vos critères de sélection et votre budget. Nous vous offrons le service de pose, de balancement et d'alignement des roues.<br/><br/>"
       subtitle_2: "Service automobile et camion léger"
       u_list_1:
@@ -139,6 +139,81 @@ fr:
     confidentiality: "Confidentialité"
     legal: "Légal"
     rights: "Tous droits réservés. L’utilisation de ce site signifie que vous consentez aux modalités d’utilisation de la présente entente."
+  legal:
+    usage:
+      title: "POLITIQUE D’UTILISATION"
+      text: "Par les présentes, et comme condition d’utilisation du site, vous déclarez et garantissez ce qui suit à la société:"
+      li:
+        item_1: "vous utiliserez le site uniquement à des fins légitimes et conformément aux présentes modalités et à notre Politique de protection des renseignements personnels."
+        item_2: "vous vous engagez à respecter nos droits de propriété intellectuelle;"
+        item_3: "vous nous fournirez des renseignements exacts, au besoin, afin d’assurer le bon fonctionnement de notre site et assumerez la responsabilité de ces renseignements;"
+        item_4: "vous reconnaissez que nous pourrions ne pas être en mesure de traiter les demandes dont nous ne pouvons confirmer l’exactitude des renseignements, et que nous ne serons pas tenus de les traiter;"
+        item_5: "vous acceptez de ne pas créer de lien vers le site (autre qu’un « signet » ou un ajout aux « favoris ») sans notre consentement écrit préalable;"
+        item_6: "vous vous abstiendrez de perturber ou de tenter de perturber le fonctionnement du site par quelque moyen que ce soit ou à l’aide de quelque dispositif que ce soit, notamment l’envoi de pourriels, le piratage, la transmission de virus informatiques ou de bombes à retardement, ou de quelque autre façon expressément interdite par les présentes modalités."
+    protect:
+      title: "Protection des renseignements personnels"
+      port:
+        title: "Portée"
+        text: "Le texte qui suit présente un énoncé des pratiques en matière de protection des renseignements personnels applicables à Suncor Énergie Inc. (« Suncor »), à ses filiales et à ses sociétés affiliées et il décrit la manière dont nous recueillons, utilisons et divulguons les renseignements personnels sur nos clients, les utilisateurs du site Web et d’autres personnes.
+               <br/><br/>Petro-Canada est une entreprise de Suncor."
+      personal:
+        title: "Renseignements personnels"
+        text: "Les renseignements personnels sont les renseignements sur une personne identifiable ou permettant l’identification d’une personne, mais ils ne comprennent pas, dans la plupart des cas, les renseignements sur les contacts d’affaires."
+      commitment:
+        title: "Notre engagement"
+        text: "Suncor est déterminée à protéger les renseignements personnels et la sécurité des renseignements personnels des personnes avec lesquelles elle interagit conformément aux lois applicables en matière de protection des renseignements personnels. Le respect et la protection de vos renseignements personnels constituent des valeurs primordiales pour nous ainsi qu'une priorité dans le cadre de nos relations."
+      consent:
+       title: "Consentement"
+       text: "Nous recueillons, utilisons et divulguons des renseignements personnels sur vous avec votre consentement (lequel peut être exprès ou implicite) ou selon ce qui est exigé ou permis par la loi. En nous donnant des renseignements personnels, vous consentez à ce que nous recueillions, utilisions et divulguions ces renseignements personnels conformément au présent énoncé des pratiques en matière de protection des renseignements personnels. Si vous ne jugez pas cet énoncé acceptable, veuillez ne pas nous donner de renseignements personnels sur vous.
+             <br/><br/>Sous réserve des exigences légales et contractuelles et moyennant un préavis raisonnable, vous pouvez retirer votre consentement à toute autre cueillette, utilisation ou divulgation de vos renseignements personnels, notamment en demandant que votre nom soit supprimé de nos listes téléphoniques et de nos listes d’adresses postales ou électroniques à des fins de marketing, en communiquant avec nous à l’adresse électronique indiquée ci-après. Si vous refusez de donner votre consentement ou le retirez, il se peut que nous ne soyons pas en mesure de vous fournir certains produits, services ou renseignements, mais nous n’exigerons pas d’autres renseignements personnels que ceux qui sont nécessaires à leur fourniture."
+      nature:
+        title: "Nature de l’information recueillie"
+        text: "Lorsqu’il est approprié de le faire, nous recueillons des renseignements personnels directement auprès de vous ou par suite d’interactions avec vous, mais nous pouvons, au besoin, recueillir des renseignements personnels auprès d’autres sources. Les renseignements personnels que nous recueillons peuvent comprendre votre nom, votre adresse postale ou électronique, votre emplacement et les autres renseignements nécessaires pour nous permettre de vous fournir des produits et des services ou de faire affaires avec vous. Nous restreignons la cueillette de vos renseignements personnels à ceux qui sont raisonnablement nécessaires aux fins que nous vous indiquons ou aux renseignements personnels qui sont par ailleurs exigés ou permis par la loi."
+      object:
+        title: "Objets de la cueillette, de l’utilisation et de la divulgation de renseignements par nous"
+        text_1: "Suncor recueille, utilise et divulgue vos renseignements personnels afin d'exécuter une ou plusieurs des tâches suivantes:"
+        li:
+          item_1: "administrer le programme <b>Petro-Points<sup>MC</sup></b>;"
+          item_2: "vous offrir en tout temps des services reliés à l’achat de produits Suncor, y compris, mais sans s’y limiter, le carburant, les lubrifiants, l’entretien de votre véhicule, les garanties et autres offres;"
+          item_3: "vous permettre de participer aux activités réservées à nos clients privilégiés, comme des promotions et des offres en prime;"
+          item_4: "gérer, développer et améliorer nos activités commerciales;"
+          item_5: "faire les vérifications nécessaires à la suite des demandes de crédit;"
+          item_6: "favoriser la mise au point et la mise en marché de nos produits et services;"
+          item_7: "comprendre vos besoins et préférences et y répondre, notamment en recommandant des produits et des services particuliers pour répondre à vos besoins;"
+          item_8: "administrer des programmes de bourses d’études et des programmes communautaires;"
+          item_9: "fournir du contenu localisé selon votre emplacement;"
+          item_10: "établir et maintenir des relations efficaces avec les parties avec lesquelles Suncor interagit, incluant les clients, fournisseurs et entrepreneurs avec lesquels nous faisons des affaires;"
+          item_11: "fournir de l’information aux personnes intéressées, dont les actionnaires;"
+          item_12: "nous protéger contre les erreurs, les ruptures de contrat, la négligence, la fraude et les activités illégales;"
+          item_13: "procéder à une opération commerciale, notamment un achat, une vente, une location, une fusion ou un autre type d’acquisition, d’aliénation ou de titrisation du financement nous concernant ou concernant une partie de notre entreprise; et"
+          item_14: "respecter les lois et les règlements ou collaborer avec les autorités policières et/ou les institutions financières pour les enquêtes concernant les fraudes par carte de crédit ou de débit ou toute autre activité frauduleuse soupçonnée impliquant Suncor, un de ses agents ou un de ses fournisseurs de services."
+        text_2: "Si nous avons besoin de vos renseignements personnels à une autre fin, nous vous l’indiquerons et obtiendrons votre consentement."
+      sharing:
+        title: "Conservation et partage des renseignements personnels"
+        text_1: "Suncor porte une attention particulière aux renseignements personnels pour que ces derniers soient conservés en toute sécurité. Vos renseignements personnels sont tenus confidentiels par Suncor. L’accès à ces renseignements est restreint au personnel autorisé de Suncor et, à moins que la loi ne l’exige ou ne le permette par ailleurs, vos renseignements personnels ne seront divulgués qu'à des partenaires dans le cadre des programmes (y compris les partenaires du programme Petro-Points<sup>MC</sup>, tels qu'ils sont indiqués dans le Guide de primes) et à des tiers fournisseurs de services responsables de l'administration de nos programmes ou de nos offres spéciales ou qui fournissent des services à Suncor. Il va sans dire que ces partenaires et fournisseurs de services ne doivent utiliser cette information que dans le but pour lequel elle a été divulguée et uniquement aux fins pour lesquelles elle a été divulguée et ils doivent s’engager à maintenir des politiques de protection des renseignements personnels conformes à celles de Suncor.
+                 <br/><br/>Les renseignements personnels recueillis par Suncor peuvent être utilisés, traités et entreposés à l’extérieur du Canada et peuvent être assujettis à des obligations d’information conformément aux lois de ces territoires étrangers.
+                 <br/><br/>Veuillez noter que les renseignements personnels que vous fournissez lorsque vous faites une demande de carte de crédit commercial seront seulement utilisés pour la vérification de crédit et non à des fins de marketing ou autres, sauf si nous vous en faisons la demande et que vous y consentez.
+                 <br/><br/>Nous utilisons diverses technologies pour recueillir des renseignements non personnels sur l’utilisation que vous faites de nos sites Web. Plus précisément, nous utilisons:"
+        text_2: "Ces technologies nous permettent :"
+        li:
+          item_1: "des témoins (<i>cookies</i>) (petits fichiers placés sur votre navigateur par nous ou des fournisseurs de service qui permettent au site de reconnaître votre navigateur pour stocker les préférences de l'utilisateur et d'autres' informations);"
+          item_2: "des balises pixel (<i>pixel tags</i>) (images invisibles placées sur certaines pages de nos sites Web afin de faire le suivi des activités sur nos sites Web); et"
+          item_3: "l’enregistrement automatique des données de session (cueillette automatique de renseignements par nos serveurs comme l’adresse IP, les types de navigateur, les visites de retour, les pages consultées et des renseignements sur les opérations)."
+          item_4: "d’améliorer la fonctionnalité de nos sites Web (p. ex., demande de nom d’utilisateur et de mot de passe);"
+          item_5: "de fournir du contenu ciblé (y compris de la publicité en fonction de votre emplacement et(ou) vos habitudes de navigation, par exemple);"
+          item_6: "d’obtenir une analyse statistique du trafic sur le site Web (p. ex. quelles pages sont les plus populaires);"
+          item_7: "d’administrer nos sites Web et nos serveurs;"
+          item_8: "de faire auditer nos services par des tiers; et"
+          item_9: "d’améliorer l’utilisation de nos sites Web ainsi que nos services."
+        text_3: "Vous pouvez accepter ou refuser les témoins. La fonction Aide de votre navigateur vous dira comment empêcher votre navigateur d’accepter de nouveaux témoins, comment programmer votre navigateur pour recevoir un avis lorsque vous recevez un nouveau témoin ou comment désactiver complètement les témoins. Si vous refusez nos témoins, ou les témoins de nos fournisseurs de services placés en notre nom, nous ne pouvons recueillir l’information fournie par ces témoins à propos de votre visite sur nos sites Web. Cela pourrait affecter votre expérience sur nos sites Web, incluant la perte de certaines fonctions sur nos sites Web, en général, et la section des Petro-Points de notre site Petro-Canada, plus spécifiquement.
+                 <br/><br/>Si vous remplissez une formule sur nos sites Web, nous pourrions relier, aux fins décrites ci-dessus, l’information de navigation associée aux témoins placés par ou pour nous sur votre navigateur avec vos renseignements personnels sous notre contrôle.
+                 <br/><br/>Selon ce processus d’option de refus, vous devrez autoriser le placement d’un témoin sur votre ordinateur indiquant que vous ne souhaitez pas que nous puissions obtenir automatiquement de l’information sur vos visites sur nos sites Web. Si vous supprimez les témoins de votre ordinateur ou si vous changez d’ordinateur ou de navigateur Web, la collecte de cette information reprendra automatiquement."
+      others:
+        title: "Autres sites Web et médias sociaux"
+        text: "Nos sites Web contiennent des liens vers des sites ou des services que nous ne fournissons pas, notamment vers des sites Web de médias sociaux que nous pouvons utiliser parallèlement avec vous. Les pratiques et politiques de protection des renseignements personnels de ces sites Web ou services peuvent être différentes des nôtres et nous vous recommandons d’examiner leurs pratiques en matière de protection des renseignements personnels pour déterminer si elles sont acceptables pour vous. Bien que nous ne soyons pas responsables de ces politiques et pratiques de protection des renseignements personnels, nous sommes responsables des renseignements personnels que nous recueillons, utilisons ou divulguons sur ces sites Web ou services conformément au présent énoncé des pratiques de protection des renseignements personnels. Nous vous recommandons aussi de revoir nos <a href='www.suncor.com/fr/newsroom/4093.aspx' target='_blank'>directives concernant la participation aux médias sociaux</a>, qui décrivent nos pratiques relatives aux médias sociaux."
+      modify:
+        title: "Modifications"
+        text: "Suncor se réserve le droit de modifier le présent énoncé des pratiques en matière de protection des renseignements personnels en tout temps par l’affichage d’un nouvel énoncé. Consultez régulièrement cette page pour savoir si des modifications ont été apportées."
   devise_forms:
     sign_in:
       title: "Connexion"

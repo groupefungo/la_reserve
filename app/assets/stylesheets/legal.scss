@@ -1,0 +1,40 @@
+.legal-bg{
+  background: #efefef;
+
+  .legal-container{
+    .legal-item{
+      margin-bottom: 45px;
+
+      h2,h3{
+        color: #ed202a;
+        font-family: $TradeGothicBold;
+        text-transform: uppercase;
+      }
+
+      h3{
+        margin-top: 45px;
+
+      }
+
+      p, ul li{
+        font-family: 'Open Sans', sans-serif;
+        text-transform: none;
+        font-size: 1.2em;
+        line-height: 1.65;
+
+        a{
+          color: #ed202a;
+          font-weight: 600;
+
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+
+      ul{
+        padding-left: 20px;
+      }
+    }
+  }
+}

@@ -4,6 +4,7 @@
   <title>La Réserve - <%= yield(:page_title) %></title>
   <%= favicon_link_tag 'favicon.ico' %>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -105,9 +106,9 @@
             <div class="footer-copyright-wrapper">
               <p class="pull-left"><%=	t('footer.copyright').html_safe %></p>
               <ul class="pull-right">
-                <li><a href=""><%=	t('footer.confidentiality').html_safe %></a></li>
-                <li><span>|</span></li>
-                <li><a href=""><%=	t('footer.legal').html_safe %></a></li>
+                <!--<li><a href=""><%=	t('footer.confidentiality').html_safe %></a></li>-->
+                <!--<li><span>|</span></li>-->
+                <li><a href="/legal/"><%=	t('footer.legal').html_safe %></a></li>
               </ul>
             </div>
           </div>
