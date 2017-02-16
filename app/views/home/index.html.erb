@@ -54,7 +54,7 @@
                   <%= image_tag @promo_one.image.url, alt: @promo_one.title %>
 
                   <% unless @promo_one.petro_point.blank? %>
-                      <div class="petro-point-wrapper hidden-xs hidden-sm">
+                      <div class="petro-point-wrapper petro-point-to-right hidden-xs hidden-sm">
                         <%= image_tag 'petro-point-icon', alt: 'Petro Point', class: 'petro-point-icon' %>
                         <span class="center-points-text">
                       <%= @promo_one.petro_point %>
