@@ -6,8 +6,8 @@ fr:
       products: "Nos Produits"
       reserve: "La Réserve"
       contact: "Contactez-nous"
-    meta_desc: "La Réserve. Les Entreprises René O’Farrell. Dépanneur Petro-Canada de Sainte-Claire. 418-883-2178."
   homepage:
+    meta_desc: "La Réserve. Dépanneur Petro-Canada de Sainte-Claire. 418-883-2178. Les Entreprises René O’Farrell."
     slider_caption_1: "découvrez <span>ici</span> notre<br/>grande variété de bières<br/>de microbrasserie"
     slider_caption_mobile_1: "disponible <span>ici</span> <br/>bières de<br/>microbrasserie"
     promotions:
@@ -17,6 +17,7 @@ fr:
       caption_3: "Petro-Points"
       caption_4: "Vins"
   about:
+    meta_desc: "Historique et services offerts. Dépanneur Petro-Canada de Sainte-Claire. 418-883-2178. Les Entreprises René O’Farrell."
     header_title: "avec vous et pour vous ...depuis 1958"
     header_subtext: "Le contact avec nos clients représente pour nous une occasion de mieux vous servir. Peu importe le moment de la journée, notre engagement est de vous offrir un service courtois et rapide et surtout de s'assurer de répondre à vos besoins. C'est un plaisir de vous accueillir et de partager votre quotidien !"
     company:
@@ -74,6 +75,7 @@ fr:
         item_6: "Vérification en vue d'un achat"
         item_7: "Entretien de VR, roulottes et remorques"
   products:
+    meta_desc: "Notre gamme de produits. Dépanneur Petro-Canada de Sainte-Claire. 418-883-2178. Les Entreprises René O’Farrell."
     breakfast:
       title: "MUFFIN DÉJEUNER"
       subtitle: "(Jimmy&nbsp;Dean)"
@@ -101,8 +103,10 @@ fr:
       title: "VIN JULIA WINE ET<br/>VINS & CIE"
       text: "C'est l'heure du 5 à 7, venez découvrir la vaste sélection de vins Julia Wine et Vin & cie.<br/><br/>Des vins de grande qualité, réputés, à prix inégalable."
   reserve:
+    meta_desc: "Nouvel espace microbrasseries du dépanneur Petro-Canada de Sainte-Claire. 418-883-2178. Les Entreprises René O’Farrell."
     sort_breweries: "Modifier l'ordre d'affichage"
   contact:
+    meta_desc: "Contactez-nous. Atelier de mécanique 418-883-3734. Petro-Canada de Sainte-Claire 418-883-2178. Les Entreprises René O’Farrell."
     address:
       title: "Dépanneur"
       text: "207, boulevard Bégin<br/>Sainte-Claire (Québec)<br/>Canada G0R 2V0"
@@ -141,6 +145,7 @@ fr:
     legal: "Légal"
     rights: "Tous droits réservés. L’utilisation de ce site signifie que vous consentez aux modalités d’utilisation de la présente entente."
   legal:
+    meta_desc: "Légal. Politique d'utilisation. Petro-Canada de Sainte-Claire. 418-883-2178. Les Entreprises René O’Farrell."
     usage:
       title: "POLITIQUE D’UTILISATION"
       text: "Par les présentes, et comme condition d’utilisation du site, vous déclarez et garantissez ce qui suit à la société:"

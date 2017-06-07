@@ -1,4 +1,6 @@
 <%= content_for :page_title, 'Microbrasseries' %>
+<%= content_for :page_desc, t('reserve.meta_desc') %>
+<% params[:id] = 'la-reserve' %>
 
 <section id="page_header" class="reserve-header">
   <%= image_tag 'reserve-header', alt: 'la reserve', class: 'mobile-landscape-header header-img' %>
