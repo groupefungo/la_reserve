@@ -98,7 +98,7 @@ fr:
       text: "Venez goûter à notre délicieuse et généreuse pizza prête-à-manger. Elle saura combler votre fringale et satisfaire vos papilles."
     beers:
       title: "BIÈRE DE MICROBRASSERIE"
-      text: "La réserve. la référence pour sa grande variété de bières de microbrasserie.<br/><br/>Près de 40 microbrasseries à découvrir."
+      text: "La Réserve, la référence pour sa grande variété de bières de microbrasserie.<br/><br/>Près de 40 microbrasseries à découvrir."
     wines:
       title: "VIN JULIA WINE ET<br/>VINS & CIE"
       text: "C'est l'heure du 5 à 7, venez découvrir la vaste sélection de vins Julia Wine et Vin & cie.<br/><br/>Des vins de grande qualité, réputés, à prix inégalable."
@@ -113,7 +113,7 @@ fr:
       phone: "<b>T</b> 418 883-2178"
       fax: "<b>F</b> 418 883-1341"
     open_hours:
-      title: "Heures d'ouvertures"
+      title: "Heure d'ouverture"
       subtitle_1: "LUNDI au vendredi"
       text_1: "5h15 à 23h"
       subtitle_2: "samedi et dimanche"
@@ -129,7 +129,7 @@ fr:
       phone: "<b>T</b> 418 883-3734"
       fax: "<b>F</b> 418 883-2355"
     mechanic_open_hours:
-      title: "Heures d'ouvertures"
+      title: "Heure d'ouverture"
       monday: "LUNDI <p>7h30 à 21h</p>"
       tuesday: "Mardi <p>7h30 à 21h</p>"
       wednesday: "Mecredi <p>7h30 à 21h</p>"
